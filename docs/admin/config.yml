@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: CodeSigils/zensicle-site
+  repo: CodeSigils/CodeSigils.github.io
   branch: master
 
 media_folder: docs/assets/images
