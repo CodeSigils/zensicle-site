@@ -1,11 +1,13 @@
 ---
+title: Markdown in 5min
 icon: simple/markdown
 ---
 
 # Markdown in 5min
 
 ## Headers
-```
+
+```plain
 # H1 Header
 ## H2 Header
 ### H3 Header
@@ -15,7 +17,8 @@ icon: simple/markdown
 ```
 
 ## Text formatting
-```
+
+```plain
 **bold text**
 *italic text*
 ***bold and italic***
@@ -24,7 +27,8 @@ icon: simple/markdown
 ```
 
 ## Links and images
-```
+
+```plain
 [Link text](https://example.com)
 [Link with title](https://example.com "Hover title")
 ![Alt text](image.jpg)
@@ -32,11 +36,12 @@ icon: simple/markdown
 ```
 
 ## Lists
-```
+
+```plain
 Unordered:
 - Item 1
 - Item 2
-  - Nested item
+    - Nested item
 
 Ordered:
 1. First item
@@ -45,14 +50,16 @@ Ordered:
 ```
 
 ## Blockquotes
-```
+
+```plain
 > This is a blockquote
 > Multiple lines
 >> Nested quote
 ```
 
 ## Code blocks
-````
+
+````plain
 ```javascript
 function hello() {
   console.log("Hello, world!");
@@ -61,7 +68,8 @@ function hello() {
 ````
 
 ## Tables
-```
+
+```plain
 | Header 1 | Header 2 | Header 3 |
 |----------|----------|----------|
 | Row 1    | Data     | Data     |
@@ -69,7 +77,8 @@ function hello() {
 ```
 
 ## Horizontal rule
-```
+
+```plain
 ---
 or
 ***
@@ -78,20 +87,23 @@ ___
 ```
 
 ## Task lists
-```
+
+```plain
 - [x] Completed task
 - [ ] Incomplete task
 - [ ] Another task
 ```
 
 ## Escaping characters
-```
-Use backslash to escape: \* \_ \# \`
+
+```plain
+Use backslash to escape: \* _ \# \`
 ```
 
 ## Line breaks
-```
-End a line with two spaces  
+
+```plain
+End a line with two spaces
 to create a line break.
 
 Or use a blank line for a new paragraph.
