@@ -310,3 +310,4 @@ toggle.name = "Switch to light mode"
 #link = "https://github.com/user/repo"# The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
+# Trigger rebuild
