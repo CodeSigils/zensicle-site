@@ -1,0 +1,43 @@
+backend:
+  name: test-repo
+
+media_folder: docs/assets/images
+public_folder: /assets/images
+
+site_url: http://localhost:8000
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Icon", name: "icon", widget: "string", required: false, hint: "e.g. lucide/rocket" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "home"
+    label: "Homepage"
+    files:
+      - file: "docs/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Icon", name: "icon", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "jsts"
+    label: "JS-TS Section"
+    folder: "docs/JS-TS"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Icon", name: "icon", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
