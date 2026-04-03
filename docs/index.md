@@ -3,8 +3,6 @@ title: Zensical
 icon: lucide/rocket
 ---
 
-# 
-
 Zensicle is a Python static site generator written by the MKDocs team.
 For full documentation visit [zensical.org](https://zensical.org/docs/).
 
@@ -139,8 +137,8 @@ simple starter pages.
 <script>
   window.MathJax = {
     tex: {
-      inlineMath: [["\(", "\)"]],
-      displayMath: [["\[", "\]"]],
+      inlineMath: [["(", ")"]],
+      displayMath: [["[", "]"]],
       processEscapes: true,
       processEnvironments: true
     },
