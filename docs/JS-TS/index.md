@@ -1,8 +1,7 @@
 ---
+title: JS and TS
 icon: simple/typescript
 ---
-
-# JS and TS
 
 This section covers tools, best practices, and guides
 for JavaScript and TypeScript development.
@@ -37,20 +36,20 @@ early and improve code maintainability:
 
 The JavaScript/TypeScript ecosystem offers a rich set of tools:
 
-| Category             | Tools                                          |
-| -------------------- | ---------------------------------------------- |
-| **Bundlers**         | Vite, Webpack, Rollup, esbuild, Parcel         |
-| **Package Managers** | npm, yarn, pnpm, bun                           |
-| **Linters**          | ESLint, oxlint                                 |
-| **Formatters**       | Prettier, [OXC Formatter](./oxc-formatting.md) |
-| **Testing**          | Vitest, Jest, Playwright, Cypress              |
-| **Type Checking**    | TypeScript, tsc                                |
+| Category | Tools |
+| --- | --- |
+| **Bundlers** | Vite, Webpack, Rollup, esbuild, Parcel |
+| **Package Managers** | npm, yarn, pnpm, bun |
+| **Linters** | ESLint, oxlint |
+| **Formatters** | Prettier, [OXC Formatter](./oxc-formatting.md) |
+| **Testing** | Vitest, Jest, Playwright, Cypress |
+| **Type Checking** | TypeScript, tsc |
 
 ## Quick Links
 
 - [OXC Formatter Guide](./oxc-formatting.md) - Learn about the fast Rust-based formatter
 - [TypeScript Official Website](https://www.typescriptlang.org/) - Documentation, playground, and resources
 
----
+***
 
 _This section is part of the Code Sigils documentation._
