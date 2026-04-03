@@ -1,8 +1,9 @@
 ---
+title: Zensical
 icon: lucide/rocket
 ---
 
-# Zensical
+# 
 
 Zensicle is a Python static site generator written by the MKDocs team.
 For full documentation visit [zensical.org](https://zensical.org/docs/).
@@ -63,15 +64,17 @@ Code can also be highlighted inline: `#!python print("Hello, Python!")`.
 
 === "Python"
 
-    ``` python
+```plain
+python
     print("Hello from Python!")
-    ```
+```
 
 === "Rust"
 
-    ``` rs
+```plain
+rs
     println!("Hello from Rust!");
-    ```
+```
 
 ## Diagrams
 
@@ -103,7 +106,7 @@ Hover it, to see a tooltip.
 - ==This was marked (highlight)==
 - ^^This was inserted (underline)^^
 - ~~This was deleted (strikethrough)~~
-- H~2~O
+- H\~2\~O
 - A^T^A
 - ++ctrl+alt+del++
 
@@ -136,13 +139,13 @@ simple starter pages.
 <script>
   window.MathJax = {
     tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
+      inlineMath: [["\(", "\)"]],
+      displayMath: [["\[", "\]"]],
       processEscapes: true,
       processEnvironments: true
     },
     options: {
-      ignoreHtmlClass: ".*|",
+      ignoreHtmlClass: ".\*|",
       processHtmlClass: "arithmatex"
     }
   };
