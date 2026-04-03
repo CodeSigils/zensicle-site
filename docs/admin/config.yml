@@ -1,10 +1,12 @@
 backend:
-  name: test-repo
+  name: github
+  repo: CodeSigils/zensicle-site
+  branch: master
 
 media_folder: docs/assets/images
 public_folder: /assets/images
 
-site_url: http://localhost:8000
+site_url: https://codesigils.github.io/zensicle-site
 
 collections:
   - name: "pages"
