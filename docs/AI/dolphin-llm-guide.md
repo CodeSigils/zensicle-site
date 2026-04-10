@@ -21,11 +21,13 @@ Dolphin is a family of open-source LLMs developed by [Eric Hartford](https://hug
 
 ### The Philosophy
 
-Unlike commercial models:
-1. No hidden system prompts that change without notice
-2. Your data stays private — Dolphin can't see or use your queries
-3. Full steerability — You control the model's behavior and ethics
-4. No imposed guidelines — You decide what's appropriate
+!!! tip "Why Dolphin?"
+
+    Unlike commercial models:
+    1. No hidden system prompts that change without notice
+    2. Your data stays private — Dolphin can't see or use your queries
+    3. Full steerability — You control the model's behavior and ethics
+    4. No imposed guidelines — You decide what's appropriate
 
 ## Dolphin Model Family
 
@@ -54,7 +56,9 @@ Dolphin models are available in various GGUF formats for different use cases:
 
 ## Pricing
 
-Dolphin is **free** to use! But you'll need some hardware or an API provider.
+!!! tip "Free and Open"
+
+    Dolphin is **free** to use! But you'll need some hardware or an API provider.
 
 ### Cost Options
 
