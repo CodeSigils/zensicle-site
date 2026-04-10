@@ -32,7 +32,7 @@ Unlike commercial models:
 ### Recent Models
 
 | Model | Size | Base Model | Context | License |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 | **Dolphin 3.0 Llama 3.1 8B** | 8B | Llama 3.1 | 8K+ | Meta Llama 3.1 |
 | **Dolphin 3.0 Llama 3.2 1B** | 1B | Llama 3.2 | 8K+ | Meta Llama 3.2 |
 | **Dolphin 3.0 Llama 3.2 3B** | 3B | Llama 3.2 | 8K+ | Meta Llama 3.2 |
@@ -59,7 +59,7 @@ Dolphin is **free** to use! But you'll need some hardware or an API provider.
 ### Cost Options
 
 | Method | Cost | Requirements |
-|---|---|---|
+| :--- | :--- | :--- |
 | **Self-hosted (Ollama/LM Studio)** | Free | GPU with 4-24GB VRAM |
 | **Hugging Face Inference** | Varies | API credits |
 | **Cloud vLLM** | Compute cost | GPU rental |
@@ -67,7 +67,7 @@ Dolphin is **free** to use! But you'll need some hardware or an API provider.
 ### Hardware Requirements
 
 | Model Size | Minimum VRAM | Recommended |
-|---|---|---|
+| :--- | :--- | :--- |
 | 1B parameters | 2GB | 4GB |
 | 3B parameters | 6GB | 8GB |
 | 8B parameters | 16GB | 24GB |
