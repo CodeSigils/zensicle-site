@@ -232,3 +232,22 @@ Use this pattern to embed YouTube videos responsively (maintains 16:9 aspect rat
 **Replace `VIDEO_ID`** with the actual YouTube video ID (e.g., `xSqnWcLFd6Y`).
 
 This ensures videos scale properly on all screen sizes while maintaining aspect ratio.
+
+### Responsive Images
+
+Use this pattern for responsive images:
+
+```markdown
+![Alt text](/assets/images/image.png){ loading=lazy }
+```
+
+**Key points:**
+- Use `loading=lazy` for below-the-fold images
+- Do NOT lazy-load the first image (hero/LCP image)
+- Always specify width/height when possible to prevent layout shift
+
+**First image (hero) - no lazy loading:**
+
+```markdown
+![Alt text](/assets/images/hero.png){ width=900 }
+```
