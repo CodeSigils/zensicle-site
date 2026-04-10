@@ -167,3 +167,48 @@ icon: lucide/rocket
 ```
 
 Common icons: `lucide/terminal`, `lucide/box`, `lucide/fish`, `lucide/cpu`, `lucide/book-open`, `lucide/bot`, `lucide/rocket`
+
+## Verification Standards
+
+These standards **MUST** be followed for all articles in this repo:
+
+### Links and References
+
+- **Double-check all links** before publishing
+- Verify external URLs are accessible and point to the correct page
+- Check that anchor links within the article work correctly
+- Ensure documentation links point to current versions (not outdated)
+
+### Command Verification
+
+When documenting commands for any technology:
+
+1. **Verify against official sources**:
+   - Check the official documentation site
+   - Check the official GitHub repository
+   - Check official installation guides
+
+2. **Verify command syntax**:
+   - Ensure correct flags and options
+   - Check for version-specific differences
+   - Confirm the command exists (not deprecated)
+
+3. **Search for known issues**:
+   - Look for common mistakes users might encounter
+   - Note any prerequisites or dependencies
+
+4. **Cross-reference multiple times**:
+   - If in doubt, search the official docs again
+   - Don't rely on a single source for critical commands
+
+### Example Verification Workflow
+
+```bash
+# Before adding a command like:
+curl -fsSL https://example.com/install | sh
+
+# Verify by:
+# 1. Checking official docs at https://example.com/docs
+# 2. Checking the install script URL is correct
+# 3. Confirming the command works on your test environment
+```
