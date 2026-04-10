@@ -3,6 +3,8 @@ title: Oh My OpenCode Guide
 icon: lucide/box
 ---
 
+![OpenCode Screenshot](/assets/images/opencode-screenshot.webp){ width=600 }
+
 A batteries-included orchestration layer for OpenCode that adds specialized agents, hooks, MCPs, and workflow automation.
 
 ## Table of Contents

@@ -3,6 +3,8 @@ title: OpenCode Guide
 icon: lucide/terminal
 ---
 
+![OpenCode Screenshot](/assets/images/opencode-screenshot.webp){ width=600 }
+
 The open source AI coding agent for terminal, desktop, and IDE.
 
 ## Table of Contents

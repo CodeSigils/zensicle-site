@@ -3,6 +3,8 @@ title: Free AI Models Guide
 icon: lucide/bot
 ---
 
+![AI Models](/assets/images/huggingface-logo.svg){ width=200 }
+
 > **Last Updated:** April 2026
 
 ---
