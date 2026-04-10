@@ -212,3 +212,23 @@ curl -fsSL https://example.com/install | sh
 # 2. Checking the install script URL is correct
 # 3. Confirming the command works on your test environment
 ```
+
+### Responsive Videos
+
+Use this pattern to embed YouTube videos responsively (maintains 16:9 aspect ratio):
+
+```markdown
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+            frameborder="0" 
+            allowfullscreen 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
+</div>
+```
+
+**Replace `VIDEO_ID`** with the actual YouTube video ID (e.g., `xSqnWcLFd6Y`).
+
+This ensures videos scale properly on all screen sizes while maintaining aspect ratio.
