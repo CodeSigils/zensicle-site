@@ -3,7 +3,7 @@ title: NotebookLM + OpenCode
 icon: lucide/book-open
 ---
 
-![NotebookLM](/assets/images/notebooklm-social.png){ width=600 }
+![NotebookLM](/assets/images/opencode-screenshot.webp){ width=400 }
 
 A comprehensive guide to connecting Google NotebookLM with OpenCode for AI-powered research and development workflows.
 
