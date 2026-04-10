@@ -7,12 +7,6 @@ icon: lucide/terminal
 
 The open source AI coding agent for terminal, desktop, and IDE.
 
-## Video Overview
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/ul7zuyATDqE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Hermes AI Agent is the companion agent that grows with you — it creates skills from experience, improves them during use, and builds a deepening model of who you are across sessions.
-
 ## Table of Contents
 
 1. [What is OpenCode?](#what-is-opencode)
@@ -30,21 +24,23 @@ Hermes AI Agent is the companion agent that grows with you — it creates skills
 13. [Troubleshooting](#troubleshooting)
 14. [Further Reading](#further-reading)
 
----
+***
 
 ## What is OpenCode?
 
 OpenCode is an **open source AI coding agent** that helps developers write, debug, refactor, and understand code. It operates as a terminal-native interface with optional desktop app and IDE extensions.
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/ul7zuyATDqE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Key Statistics
 
-| Metric                 | Value            |
-| ---------------------- | ---------------- |
-| **GitHub Stars**       | 140K+            |
-| **Contributors**       | 850+             |
-| **Monthly Developers** | 6.5M+            |
-| **Commits**            | 11,000+          |
-| **License**            | MIT / Apache 2.0 |
+| Metric | Value |
+| --- | --- |
+| **GitHub Stars** | 140K+ |
+| **Contributors** | 850+ |
+| **Monthly Developers** | 6.5M+ |
+| **Commits** | 11,000+ |
+| **License** | MIT / Apache 2.0 |
 
 ### Core Philosophy
 
@@ -53,7 +49,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 - **Privacy First** — No code or context stored on servers
 - **Local-First** — Run locally with optional cloud services
 
----
+***
 
 ## Official Links
 
@@ -65,7 +61,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 - **Discord**: https://opencode.ai/discord
 - **Desktop App**: https://opencode.ai/download
 
----
+***
 
 ## Installation
 
@@ -79,12 +75,12 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 
 > **⚠️ AVOID THESE COMMON MISTAKES:**
 
-| ❌ Don't Do This                                           | ✅ Do This Instead           |
-| ---------------------------------------------------------- | ---------------------------- |
-| `sudo apt install nodejs` (Ubuntu - installs ancient Node) | Use mise, fnm, n, or nvm     |
-| Rely on `source ~/.nvm/nvm.sh` manually                    | Use mise or fnm (auto-loads) |
-| Assume Node persists across terminals                      | Test in a NEW terminal       |
-| Use different Node versions per project                    | Use a version manager        |
+| ❌ Don't Do This | ✅ Do This Instead |
+| --- | --- |
+| `sudo apt install nodejs` (Ubuntu - installs ancient Node) | Use mise, fnm, n, or nvm |
+| Rely on `source ~/.nvm/nvm.sh` manually | Use mise or fnm (auto-loads) |
+| Assume Node persists across terminals | Test in a NEW terminal |
+| Use different Node versions per project | Use a version manager |
 
 #### Recommended: mise (Best for OpenCode Users)
 
@@ -215,7 +211,7 @@ Download the beta for macOS, Windows, and Linux:
 
 - https://opencode.ai/download
 
----
+***
 
 ## Core Features
 
@@ -309,7 +305,7 @@ Auto-reload and respond to file changes:
 - Build on save
 - Test on change
 
----
+***
 
 ## Model Support
 
@@ -317,13 +313,13 @@ Auto-reload and respond to file changes:
 
 OpenCode connects to virtually any LLM via Models.dev:
 
-| Category          | Providers                                  |
-| ----------------- | ------------------------------------------ |
-| **Cloud APIs**    | OpenAI, Anthropic, Google, Mistral, Cohere |
-| **Local Models**  | Ollama, LM Studio, LocalAI                 |
-| **Subscriptions** | GitHub Copilot, ChatGPT Plus/Pro           |
-| **Routers**       | OpenRouter, Models.dev                     |
-| **Open Models**   | Hugging Face (17+ providers)               |
+| Category | Providers |
+| --- | --- |
+| **Cloud APIs** | OpenAI, Anthropic, Google, Mistral, Cohere |
+| **Local Models** | Ollama, LM Studio, LocalAI |
+| **Subscriptions** | GitHub Copilot, ChatGPT Plus/Pro |
+| **Routers** | OpenRouter, Models.dev |
+| **Open Models** | Hugging Face (17+ providers) |
 
 ### Hugging Face Integration
 
@@ -383,14 +379,14 @@ For organization billing:
 
 ### Recommended Models
 
-| Model             | Best For              |
-| ----------------- | --------------------- |
-| GPT-5.2           | General coding, speed |
-| GPT-5.1 Codex     | Code-heavy tasks      |
-| Claude Opus 4.5   | Complex reasoning     |
-| Claude Sonnet 4.5 | Balanced performance  |
-| Gemini 3 Pro      | Long context tasks    |
-| Big Pickle        | Free tier             |
+| Model | Best For |
+| --- | --- |
+| GPT-5.2 | General coding, speed |
+| GPT-5.1 Codex | Code-heavy tasks |
+| Claude Opus 4.5 | Complex reasoning |
+| Claude Sonnet 4.5 | Balanced performance |
+| Gemini 3 Pro | Long context tasks |
+| Big Pickle | Free tier |
 
 ### OpenCode Zen
 
@@ -407,7 +403,7 @@ A curated list of tested and verified models:
 - Big Pickle Free
 - MiniMax M2.1 Free
 
----
+***
 
 ## Plugins & Extensions
 
@@ -436,37 +432,37 @@ OpenCode's plugin system allows hooking into various events and customizing beha
 
 OpenCode supports 20+ events for plugins:
 
-| Category         | Events                                                                                                     |
-| ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Command**      | `command.executed`                                                                                         |
-| **File**         | `file.edited`, `file.watcher.updated`                                                                      |
-| **Session**      | `session.created`, `session.compacted`, `session.deleted`, `session.diff`, `session.error`, `session.idle` |
-| **Tool**         | `tool.execute.before`, `tool.execute.after`                                                                |
-| **LSP**          | `lsp.client.diagnostics`, `lsp.updated`                                                                    |
-| **TUI**          | `tui.prompt.append`, `tui.command.execute`, `tui.toast.show`                                               |
-| **Permission**   | `permission.asked`, `permission.replied`                                                                   |
-| **Shell**        | `shell.env`                                                                                                |
-| **Server**       | `server.connected`                                                                                         |
-| **Todo**         | `todo.updated`                                                                                             |
-| **Installation** | `installation.updated`                                                                                     |
+| Category | Events |
+| --- | --- |
+| **Command** | `command.executed` |
+| **File** | `file.edited`, `file.watcher.updated` |
+| **Session** | `session.created`, `session.compacted`, `session.deleted`, `session.diff`, `session.error`, `session.idle` |
+| **Tool** | `tool.execute.before`, `tool.execute.after` |
+| **LSP** | `lsp.client.diagnostics`, `lsp.updated` |
+| **TUI** | `tui.prompt.append`, `tui.command.execute`, `tui.toast.show` |
+| **Permission** | `permission.asked`, `permission.replied` |
+| **Shell** | `shell.env` |
+| **Server** | `server.connected` |
+| **Todo** | `todo.updated` |
+| **Installation** | `installation.updated` |
 
 ### Built-in Tools
 
-| Tool          | Description                  |
-| ------------- | ---------------------------- |
-| `bash`        | Execute shell commands       |
-| `read`        | Read files with glob support |
-| `edit`        | Apply string replacements    |
-| `write`       | Write content to files       |
-| `grep`        | Search file contents         |
-| `glob`        | Find files by pattern        |
-| `lsp`         | Language server queries      |
-| `apply_patch` | Apply patches                |
-| `skill`       | Load skill documentation     |
-| `todowrite`   | Manage todo lists            |
-| `webfetch`    | Fetch web content            |
-| `websearch`   | Search the web               |
-| `question`    | Ask user questions           |
+| Tool | Description |
+| --- | --- |
+| `bash` | Execute shell commands |
+| `read` | Read files with glob support |
+| `edit` | Apply string replacements |
+| `write` | Write content to files |
+| `grep` | Search file contents |
+| `glob` | Find files by pattern |
+| `lsp` | Language server queries |
+| `apply_patch` | Apply patches |
+| `skill` | Load skill documentation |
+| `todowrite` | Manage todo lists |
+| `webfetch` | Fetch web content |
+| `websearch` | Search the web |
+| `question` | Ask user questions |
 
 ### Custom Tools
 
@@ -487,7 +483,7 @@ export const MyTool = tool({
 });
 ```
 
----
+***
 
 ## Most Used Plugins
 
@@ -571,22 +567,22 @@ Complete Claude Code compatibility for OpenCode.
 
 ### 7. Session & Analytics Plugins
 
-| Plugin                      | Purpose                       |
-| --------------------------- | ----------------------------- |
+| Plugin | Purpose |
+| --- | --- |
 | `opencode-helicone-session` | Session logging and analytics |
-| `opencode-wakatime`         | Automatic time tracking       |
+| `opencode-wakatime` | Automatic time tracking |
 
 ### 8. MCP Servers (1,200+ Available)
 
-| Category          | Popular Servers                |
-| ----------------- | ------------------------------ |
-| **Browser**       | Playwright, Puppeteer          |
-| **Database**      | PostgreSQL, Supabase, SQLite   |
-| **Search**        | Brave Search, Google Search    |
+| Category | Popular Servers |
+| --- | --- |
+| **Browser** | Playwright, Puppeteer |
+| **Database** | PostgreSQL, Supabase, SQLite |
+| **Search** | Brave Search, Google Search |
 | **Communication** | Slack, Discord, Linear, Notion |
-| **Cloud**         | AWS, GCP, Azure                |
-| **Development**   | GitHub, GitLab, Docker         |
-| **Memory**        | Memory (context persistence)   |
+| **Cloud** | AWS, GCP, Azure |
+| **Development** | GitHub, GitLab, Docker |
+| **Memory** | Memory (context persistence) |
 
 **Resources:**
 
@@ -594,16 +590,16 @@ Complete Claude Code compatibility for OpenCode.
 - https://github.com/wong2/awesome-mcp-servers
 - https://mcp-awesome.com
 
----
+***
 
 ## Configuration
 
 ### Configuration Files
 
-| Location                           | Priority | Purpose                   |
-| ---------------------------------- | -------- | ------------------------- |
-| `opencode.json`                    | Project  | Project-specific settings |
-| `~/.config/opencode/opencode.json` | Global   | User-wide settings        |
+| Location | Priority | Purpose |
+| --- | --- | --- |
+| `opencode.json` | Project | Project-specific settings |
+| `~/.config/opencode/opencode.json` | Global | User-wide settings |
 
 ### Basic Configuration
 
@@ -664,7 +660,7 @@ Then:
 3. Copy API key
 4. Paste into terminal
 
----
+***
 
 ## Interface Options
 
@@ -707,7 +703,7 @@ Access via browser at:
 
 Connect to ACP-compatible editors for deep IDE integration.
 
----
+***
 
 ## Enterprise Features
 
@@ -720,12 +716,12 @@ Connect to ACP-compatible editors for deep IDE integration.
 
 ### Enterprise Deployment
 
-| Feature              | Description                         |
-| -------------------- | ----------------------------------- |
-| **Self-Hosted**      | Run entirely on your infrastructure |
-| **Custom Providers** | Use your own LLM infrastructure     |
-| **Privacy Controls** | Data never leaves your environment  |
-| **SSO Support**      | Enterprise authentication           |
+| Feature | Description |
+| --- | --- |
+| **Self-Hosted** | Run entirely on your infrastructure |
+| **Custom Providers** | Use your own LLM infrastructure |
+| **Privacy Controls** | Data never leaves your environment |
+| **SSO Support** | Enterprise authentication |
 
 ### Zen for Teams
 
@@ -735,7 +731,7 @@ Connect to ACP-compatible editors for deep IDE integration.
 - Monthly spending limits
 - Shared API keys
 
----
+***
 
 ## Use Cases
 
@@ -910,29 +906,29 @@ opencode --agent
 
 Best for: Project setup, large refactors, debugging, testing, code migration.
 
----
+***
 
 ## Comparison
 
 ### OpenCode vs Claude Code
 
-| Feature              | **OpenCode**        | **Claude Code**    |
-| -------------------- | ------------------- | ------------------ |
-| **GitHub Stars**     | 140K+               | 20K+               |
-| **License**          | MIT                 | Proprietary        |
-| **Provider Support** | 75+ providers       | Anthropic only     |
-| **Plugin System**    | 20+ events          | 3 phases           |
-| **Interface**        | TUI, Desktop, IDE   | CLI only           |
-| **Pricing**          | Free + optional Zen | Uses Anthropic API |
+| Feature | **OpenCode** | **Claude Code** |
+| --- | --- | --- |
+| **GitHub Stars** | 140K+ | 20K+ |
+| **License** | MIT | Proprietary |
+| **Provider Support** | 75+ providers | Anthropic only |
+| **Plugin System** | 20+ events | 3 phases |
+| **Interface** | TUI, Desktop, IDE | CLI only |
+| **Pricing** | Free + optional Zen | Uses Anthropic API |
 
 ### OpenCode vs Cursor
 
-| Feature           | **OpenCode**    | **Cursor**    |
-| ----------------- | --------------- | ------------- |
-| **Focus**         | Terminal-native | IDE-centric   |
-| **Model Support** | Any provider    | Custom models |
-| **Open Source**   | Yes             | Partial       |
-| **Price**         | Free            | $20/mo+       |
+| Feature | **OpenCode** | **Cursor** |
+| --- | --- | --- |
+| **Focus** | Terminal-native | IDE-centric |
+| **Model Support** | Any provider | Custom models |
+| **Open Source** | Yes | Partial |
+| **Price** | Free | $20/mo+ |
 
 ### When to Use OpenCode
 
@@ -942,7 +938,7 @@ Best for: Project setup, large refactors, debugging, testing, code migration.
 - You value open-source software
 - You want to avoid vendor lock-in
 
----
+***
 
 ## Troubleshooting
 
@@ -1022,7 +1018,7 @@ rm -rf ~/.cache/opencode
 ~/.config/opencode/logs/
 ```
 
----
+***
 
 ## Further Reading
 
@@ -1062,6 +1058,6 @@ rm -rf ~/.cache/opencode
 - [AgentWiki OpenCode](https://agentwiki.org/opencode)
 - [Ry Walker Research](https://rywalker.com/research/opencode)
 
----
+***
 
 _Guide last updated: April 2026_
