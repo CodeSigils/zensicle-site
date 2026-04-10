@@ -90,20 +90,24 @@ Before starting, ensure you have:
 
 ### Prerequisites
 
-**This guide assumes you have:**
+!!! tip "Before You Start"
 
-- OpenCode installed (`curl -fsSL https://opencode.ai/install.sh | sh`)
-- Node.js 18+ persistently installed
-
-**Node.js not working?** See [OpenCode Prerequisites](../opencode-guide.md#prerequisites) for setup.
+    **This guide assumes you have:**
+    
+    - OpenCode installed (`curl -fsSL https://opencode.ai/install.sh | sh`)
+    - Node.js 18+ persistently installed
+    
+    **Node.js not working?** See [OpenCode Prerequisites](../opencode-guide.md#prerequisites) for setup.
 
 #### Quick Node.js Verification
 
-```bash
-# Open a BRAND NEW terminal, run:
-node --version
-# Should show v18+ or v20+
-```
+??? tip "Verify Node.js"
+
+    Open a BRAND NEW terminal, run:
+    ```bash
+    node --version
+    ```
+    Should show v18+ or v20+
 
 ### Using npx with pnpm/mise
 
