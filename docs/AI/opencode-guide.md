@@ -90,9 +90,6 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 # Install mise (if you have curl or build from source)
 curl https://mise.run | sh
 
-# Or if you have pnpm already:
-pnpm install -g mise-enforce
-
 # Add to shell config (~/.zshrc or ~/.bashrc):
 echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 
