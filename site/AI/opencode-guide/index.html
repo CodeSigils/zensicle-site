@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A new project generated from the default template project.">
+        <meta name="description" content="Complete guide to OpenCode - the open source AI coding agent for terminal-based development with multi-model support, MCP integration, and slash commands.">
       
       
         <meta name="author" content="Tom Geo">
@@ -59,6 +59,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"Jetbrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
@@ -227,7 +229,7 @@
   <span class="md-ellipsis">
     
   
-    Zensical
+    Code Sigils
   
 
     
@@ -281,6 +283,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -312,9 +318,12 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg>
   
   <span class="md-ellipsis">
     
@@ -327,8 +336,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
@@ -340,6 +355,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1963,10 +1980,12 @@
         
   
   
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75q.918 0 1.627.111a6.4 6.4 0 0 1 1.306.34v2.458a4 4 0 0 0-.643-.361 5 5 0 0 0-.717-.26 5.5 5.5 0 0 0-1.426-.2q-.45 0-.819.086a2.1 2.1 0 0 0-.623.242q-.254.156-.393.374a.9.9 0 0 0-.14.49q0 .294.156.529.156.234.443.444c.287.21.423.276.696.41q.41.203.926.416.705.296 1.266.628.561.333.963.753.402.418.614.957.213.538.214 1.253 0 .986-.373 1.656a3.03 3.03 0 0 1-1.012 1.085 4.4 4.4 0 0 1-1.487.596q-.85.18-1.79.18a10 10 0 0 1-1.84-.164 5.5 5.5 0 0 1-1.512-.493v-2.63a5.03 5.03 0 0 0 3.237 1.2q.5 0 .872-.09.373-.09.623-.25.249-.162.373-.38a1.02 1.02 0 0 0-.074-1.089 2.1 2.1 0 0 0-.537-.5 5.6 5.6 0 0 0-.807-.444 28 28 0 0 0-1.007-.436q-1.377-.575-2.053-1.405t-.676-2.005q0-.92.369-1.582.368-.662 1.004-1.089a4.5 4.5 0 0 1 1.47-.629 7.5 7.5 0 0 1 1.77-.201m-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+  
   <span class="md-ellipsis">
     
   
-    The OXC tools
+    OXC Formatter Guide
   
 
     
@@ -3315,7 +3334,7 @@
       <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    Zensical
+    Code Sigils
   </span>
 
       </a>
@@ -3330,7 +3349,7 @@
     
     
       <li class="md-path__item">
-        <a href="../dolphin-llm-guide/" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
     AI
@@ -3374,7 +3393,9 @@
 <hr />
 <h2 id="what-is-opencode">What is OpenCode?<a class="headerlink" href="#what-is-opencode" title="Permanent link">&para;</a></h2>
 <p>OpenCode is an <strong>open source AI coding agent</strong> that helps developers write, debug, refactor, and understand code. It operates as a terminal-native interface with optional desktop app and IDE extensions.</p>
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/ul7zuyATDqE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-video-wrapper">
+  <iframe src="https://www.youtube.com/embed/ul7zuyATDqE" allowfullscreen></iframe>
+</div>
 
 <h3 id="key-statistics">Key Statistics<a class="headerlink" href="#key-statistics" title="Permanent link">&para;</a></h3>
 <table>
@@ -3428,15 +3449,18 @@
 <hr />
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Requirements Before You Start</p>
+</div>
 <ol>
 <li>A modern terminal emulator (WezTerm, Alacritty, Ghostty, or Kitty recommended)</li>
 <li>API keys for your preferred LLM provider(s)</li>
 <li>Node.js 18+ (required for MCP servers and plugins)</li>
 </ol>
 <h4 id="nodejs-installation-common-foot-guns-to-avoid">Node.js Installation (Common "Foot Guns" to Avoid)<a class="headerlink" href="#nodejs-installation-common-foot-guns-to-avoid" title="Permanent link">&para;</a></h4>
-<blockquote>
-<p><strong>⚠️ AVOID THESE COMMON MISTAKES:</strong></p>
-</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Common Mistakes to Avoid</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -3468,18 +3492,19 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Install mise (if you have curl or build from source)</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>curl<span class="w"> </span>https://mise.run<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Or if you have pnpm already:</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>pnpm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>mise-enforce
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Add to shell config (~/.zshrc or ~/.bashrc):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;eval &quot;$(mise activate zsh)&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.zshrc
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Add to shell config (~/.zshrc or ~/.bashrc):</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;eval &quot;$(mise activate zsh)&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.zshrc
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Install Node via mise</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>mise<span class="w"> </span>use<span class="w"> </span>-g<span class="w"> </span>node@lts
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Install Node via mise</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>mise<span class="w"> </span>install<span class="w"> </span>nodejs<span class="w"> </span>lts
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1"># Verify (open NEW terminal)</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>node<span class="w"> </span>--version
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Verify (open NEW terminal)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>node<span class="w"> </span>--version
 </span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Distrobox Users</p>
+<p>If you're using distrobox to develop in a different distribution, be aware that mise-installed packages (like Node.js tools via <code>mise use -g node@lts</code>) can sometimes conflict with packages installed in the host distribution's package manager. For example, tools installed globally via <code>pipx</code> on the host may not be accessible inside the container, or vice versa. This is because distrobox shares the host's home directory but uses the container's binary paths. If you encounter issues, consider whether you're running tools from the host or the container — consistency is key.</p>
+</div>
 <h4 id="alternative-fnm-fast-node-manager">Alternative: fnm (Fast Node Manager)<a class="headerlink" href="#alternative-fnm-fast-node-manager" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Install fnm</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://fnm.vercel.app/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
@@ -3503,14 +3528,17 @@
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pnpm<span class="w"> </span>--version
 </span></code></pre></div>
 <h4 id="quick-verification">Quick Verification<a class="headerlink" href="#quick-verification" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 1. Open a BRAND NEW terminal (not the same one)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># 2. Run:</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>node<span class="w"> </span>--version
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>npm<span class="w"> </span>--version
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># Both should show versions</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># If errors → Node not persistent</span>
+<details class="tip">
+<summary>How to Verify</summary>
+<ol>
+<li>Open a BRAND NEW terminal (not the same one)</li>
+<li>Run:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>node<span class="w"> </span>--version
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>npm<span class="w"> </span>--version
 </span></code></pre></div>
+<p>Both should show versions. If errors → Node not persistent.</p>
+</details>
 <h4 id="why-this-matters-for-mcp">Why This Matters for MCP<a class="headerlink" href="#why-this-matters-for-mcp" title="Permanent link">&para;</a></h4>
 <p>MCP servers run as subprocesses. If Node isn't persistent:</p>
 <ul>
@@ -3519,7 +3547,14 @@
 <li>Plugin loading fails</li>
 </ul>
 <h3 id="install-via-script-recommended">Install via Script (Recommended)<a class="headerlink" href="#install-via-script-recommended" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<div class="admonition tip">
+<p class="admonition-title">Quick Install (Recommended)</p>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Official install script (recommended)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Alternative URL (also works)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </span></code></pre></div>
 <h3 id="package-managers">Package Managers<a class="headerlink" href="#package-managers" title="Permanent link">&para;</a></h3>
 <p><strong>Using Node.js:</strong></p>
@@ -3535,15 +3570,19 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>opencode<span class="w">           </span><span class="c1"># Stable</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>paru<span class="w"> </span>-S<span class="w"> </span>opencode-bin<span class="w">              </span><span class="c1"># AUR (Latest)</span>
 </span></code></pre></div>
+<p><strong>Using Go:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Requires Go 1.21+</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>go<span class="w"> </span>install<span class="w"> </span>github.com/anomalyco/opencode@latest
+</span></code></pre></div>
 <h3 id="windows-installation">Windows Installation<a class="headerlink" href="#windows-installation" title="Permanent link">&para;</a></h3>
 <p><strong>Using Chocolatey:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>choco<span class="w"> </span>install<span class="w"> </span>opencode
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>choco<span class="w"> </span>install<span class="w"> </span>opencode
 </span></code></pre></div>
 <p><strong>Using Scoop:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>scoop<span class="w"> </span>install<span class="w"> </span>opencode
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>scoop<span class="w"> </span>install<span class="w"> </span>opencode
 </span></code></pre></div>
 <p><strong>Using Docker:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>ghcr.io/anomalyco/opencode
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>ghcr.io/anomalyco/opencode
 </span></code></pre></div>
 <p><strong>Using WSL (Recommended):</strong>
 OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
@@ -3607,7 +3646,7 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 </ul>
 <h3 id="5-share-sessions">5. Share Sessions<a class="headerlink" href="#5-share-sessions" title="Permanent link">&para;</a></h3>
 <p>Share conversation links with your team:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/share
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>/share
 </span></code></pre></div>
 <p>Creates a link to the current conversation for collaboration and review.</p>
 <h3 id="6-multi-session">6. Multi-Session<a class="headerlink" href="#6-multi-session" title="Permanent link">&para;</a></h3>
@@ -3669,17 +3708,17 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 <h3 id="hugging-face-integration">Hugging Face Integration<a class="headerlink" href="#hugging-face-integration" title="Permanent link">&para;</a></h3>
 <p>OpenCode natively supports <strong>Hugging Face Inference Providers</strong> - giving you access to open models from 17+ providers including Hugging Face, Together AI, Hyperbolic, and more.</p>
 <h4 id="quick-setup">Quick Setup<a class="headerlink" href="#quick-setup" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 1. Create token at huggingface.co/settings/tokens</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1">#    (needs &quot;Make calls to Inference Providers&quot; permission)</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># 2. Run auth login</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>opencode<span class="w"> </span>auth<span class="w"> </span>login
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 3. Select Hugging Face when prompted</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1">#    Enter your token: hf_...</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1"># 4. Select a model</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>/models
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 1. Create token at huggingface.co/settings/tokens</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1">#    (needs &quot;Make calls to Inference Providers&quot; permission)</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># 2. Run auth login</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>opencode<span class="w"> </span>auth<span class="w"> </span>login
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 3. Select Hugging Face when prompted</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="c1">#    Enter your token: hf_...</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1"># 4. Select a model</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>/models
 </span></code></pre></div>
 <h4 id="available-models">Available Models<a class="headerlink" href="#available-models" title="Permanent link">&para;</a></h4>
 <p>Access to open models from multiple providers:</p>
@@ -3693,18 +3732,18 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 </ul>
 <h4 id="config-optional">Config (Optional)<a class="headerlink" href="#config-optional" title="Permanent link">&para;</a></h4>
 <p>For organization billing:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="nt">&quot;huggingface&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">        </span><span class="nt">&quot;headers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">          </span><span class="nt">&quot;X-HF-Bill-To&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your-org-name&quot;</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="nt">&quot;huggingface&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">        </span><span class="nt">&quot;headers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">          </span><span class="nt">&quot;X-HF-Bill-To&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your-org-name&quot;</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>Resources:</strong></p>
 <ul>
@@ -3767,13 +3806,13 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 <p>OpenCode's plugin system allows hooking into various events and customizing behavior.</p>
 <h4 id="loading-plugins">Loading Plugins<a class="headerlink" href="#loading-plugins" title="Permanent link">&para;</a></h4>
 <p><strong>From local files:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>.opencode/plugins/<span class="w">      </span><span class="c1"># Project-level</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>~/.config/opencode/plugins/<span class="w">  </span><span class="c1"># Global plugins</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>.opencode/plugins/<span class="w">      </span><span class="c1"># Project-level</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>~/.config/opencode/plugins/<span class="w">  </span><span class="c1"># Global plugins</span>
 </span></code></pre></div>
 <p><strong>From npm:</strong></p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;plugin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;opencode-helicone-session&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;opencode-wakatime&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;@my-org/custom-plugin&quot;</span><span class="p">]</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;plugin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;opencode-helicone-session&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;opencode-wakatime&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;@my-org/custom-plugin&quot;</span><span class="p">]</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h4 id="plugin-events">Plugin Events<a class="headerlink" href="#plugin-events" title="Permanent link">&para;</a></h4>
 <p>OpenCode supports 20+ events for plugins:</p>
@@ -3896,18 +3935,18 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 </table>
 <h3 id="custom-tools">Custom Tools<a class="headerlink" href="#custom-tools" title="Permanent link">&para;</a></h3>
 <p>Plugins can add custom tools via the <code>tool</code> helper:</p>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">tool</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@opencode-ai/plugin&quot;</span><span class="p">;</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">MyTool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tool</span><span class="p">({</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;my_tool&quot;</span><span class="p">,</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;A custom tool&quot;</span><span class="p">,</span>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">  </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="kt">z.object</span><span class="p">({</span>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">z.string</span><span class="p">(),</span>
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">  </span><span class="p">}),</span>
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">  </span><span class="nx">execute</span><span class="o">:</span><span class="w"> </span><span class="kt">async</span><span class="w"> </span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">ctx</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello </span><span class="si">${</span><span class="nx">args</span><span class="p">.</span><span class="nx">foo</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="p">});</span>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">tool</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@opencode-ai/plugin&quot;</span><span class="p">;</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">MyTool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tool</span><span class="p">({</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;my_tool&quot;</span><span class="p">,</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">  </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;A custom tool&quot;</span><span class="p">,</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="kt">z.object</span><span class="p">({</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">z.string</span><span class="p">(),</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">  </span><span class="p">}),</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">  </span><span class="nx">execute</span><span class="o">:</span><span class="w"> </span><span class="kt">async</span><span class="w"> </span><span class="p">(</span><span class="nx">args</span><span class="p">,</span><span class="w"> </span><span class="nx">ctx</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`Hello </span><span class="si">${</span><span class="nx">args</span><span class="p">.</span><span class="nx">foo</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="p">});</span>
 </span></code></pre></div>
 <hr />
 <h2 id="most-used-plugins">Most Used Plugins<a class="headerlink" href="#most-used-plugins" title="Permanent link">&para;</a></h2>
@@ -4048,58 +4087,67 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 </thead>
 <tbody>
 <tr>
-<td><code>opencode.json</code></td>
-<td>Project</td>
-<td>Project-specific settings</td>
+<td><code>./opencode.json</code></td>
+<td>1<sup>st</sup></td>
+<td>Project directory</td>
 </tr>
 <tr>
 <td><code>~/.config/opencode/opencode.json</code></td>
-<td>Global</td>
-<td>User-wide settings</td>
+<td>2<sup>nd</sup></td>
+<td>XDG config directory</td>
+</tr>
+<tr>
+<td><code>~/.opencode.json</code></td>
+<td>3<sup>rd</sup></td>
+<td>Home directory</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Note</strong>: Config file locations (verified 2026):
+- <code>$HOME/.opencode.json</code>
+- <code>$XDG_CONFIG_HOME/opencode/.opencode.json</code>
+- <code>./.opencode.json</code> (local directory)</p>
 <h3 id="basic-configuration">Basic Configuration<a class="headerlink" href="#basic-configuration" title="Permanent link">&para;</a></h3>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anthropic/claude-sonnet-4-20250514&quot;</span><span class="p">,</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">  </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="nt">&quot;bash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span><span class="p">,</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="nt">&quot;read&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span><span class="p">,</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="nt">&quot;edit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anthropic/claude-sonnet-4-20250514&quot;</span><span class="p">,</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="nt">&quot;bash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span><span class="p">,</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="nt">&quot;read&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span><span class="p">,</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">    </span><span class="nt">&quot;edit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;allow&quot;</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="advanced-configuration">Advanced Configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  &quot;$schema&quot;: &quot;https://opencode.ai/config.json&quot;,
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  &quot;model&quot;: &quot;opencode/gpt-5.1-codex&quot;,
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  &quot;provider&quot;: {
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    &quot;openai&quot;: {
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>      &quot;models&quot;: {
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>        &quot;gpt-5&quot;: {
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>          &quot;options&quot;: {
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>            &quot;reasoningEffort&quot;: &quot;high&quot;,
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>            &quot;textVerbosity&quot;: &quot;low&quot;,
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>          },
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>        },
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>      },
-</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>    },
-</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>  },
-</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>  &quot;plugin&quot;: [&quot;oh-my-openagent&quot;],
-</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>  &quot;mcp&quot;: {
-</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a>    &quot;enabled&quot;: true,
-</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>  },
-</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a>  &quot;permission&quot;: {
-</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>    &quot;bash&quot;: &quot;allow&quot;,
-</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>    &quot;mcp_*&quot;: &quot;ask&quot;,
-</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a>  },
-</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>}
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>{
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  &quot;$schema&quot;: &quot;https://opencode.ai/config.json&quot;,
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  &quot;model&quot;: &quot;opencode/gpt-5.1-codex&quot;,
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  &quot;provider&quot;: {
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    &quot;openai&quot;: {
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>      &quot;models&quot;: {
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>        &quot;gpt-5&quot;: {
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>          &quot;options&quot;: {
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>            &quot;reasoningEffort&quot;: &quot;high&quot;,
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>            &quot;textVerbosity&quot;: &quot;low&quot;,
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>          },
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>        },
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>      },
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>    },
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>  },
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>  &quot;plugin&quot;: [&quot;oh-my-openagent&quot;],
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>  &quot;mcp&quot;: {
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>    &quot;enabled&quot;: true,
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>  },
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>  &quot;permission&quot;: {
+</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>    &quot;bash&quot;: &quot;allow&quot;,
+</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>    &quot;mcp_*&quot;: &quot;ask&quot;,
+</span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>  },
+</span><span id="__span-19-24"><a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>}
 </span></code></pre></div>
 <h3 id="provider-setup">Provider Setup<a class="headerlink" href="#provider-setup" title="Permanent link">&para;</a></h3>
 <p>Connect to providers using the <code>/connect</code> command:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>/opencode
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>/connect
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>/opencode
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>/connect
 </span></code></pre></div>
 <p>Then:</p>
 <ol>
@@ -4191,98 +4239,98 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 <p>OpenCode serves different types of users, from developers to non-programmers.</p>
 <h3 id="developer-use-cases">Developer Use Cases<a class="headerlink" href="#developer-use-cases" title="Permanent link">&para;</a></h3>
 <h4 id="code-review-and-analysis">Code Review and Analysis<a class="headerlink" href="#code-review-and-analysis" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Review code for security issues</span>
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Review src/auth.ts for security issues&quot;</span>
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Analyze code architecture</span>
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Explain the architecture of the middleware system&quot;</span>
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Find all TODO comments in the project</span>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Find all TODO comments and create a summary&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># Review code for security issues</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Review src/auth.ts for security issues&quot;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1"># Analyze code architecture</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Explain the architecture of the middleware system&quot;</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c1"># Find all TODO comments in the project</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Find all TODO comments and create a summary&quot;</span>
 </span></code></pre></div>
 <h4 id="scaffolding-new-features">Scaffolding New Features<a class="headerlink" href="#scaffolding-new-features" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># Initialize repository context first</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>opencode<span class="w"> </span>init
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1"># Then scaffold a new feature with handler, validation, and tests</span>
-</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Add a new POST /api/widgets endpoint with handler, validation, and tests&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Initialize repository context first</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>opencode<span class="w"> </span>init
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># Then scaffold a new feature with handler, validation, and tests</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Add a new POST /api/widgets endpoint with handler, validation, and tests&quot;</span>
 </span></code></pre></div>
 <h4 id="large-scale-refactoring">Large-Scale Refactoring<a class="headerlink" href="#large-scale-refactoring" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Rename a function across all files</span>
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Rename getUserProfile to fetchUserProfile and update all imports and docs&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Rename a function across all files</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Rename getUserProfile to fetchUserProfile and update all imports and docs&quot;</span>
 </span></code></pre></div>
 <h4 id="test-driven-development-tdd">Test-Driven Development (TDD)<a class="headerlink" href="#test-driven-development-tdd" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Create failing test first, then implement</span>
-</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Run npm test. Read the failure. Implement the code in feature.ts to make the test pass&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Create failing test first, then implement</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Run npm test. Read the failure. Implement the code in feature.ts to make the test pass&quot;</span>
 </span></code></pre></div>
 <h4 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Find and fix bugs</span>
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Find and fix the memory leak in the application&quot;</span>
-</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
-</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># Explain error messages</span>
-</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Explain what this error means in context of our codebase&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Find and fix bugs</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Find and fix the memory leak in the application&quot;</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c1"># Explain error messages</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Explain what this error means in context of our codebase&quot;</span>
 </span></code></pre></div>
 <h4 id="documentation-maintenance">Documentation Maintenance<a class="headerlink" href="#documentation-maintenance" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Update outdated documentation</span>
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Read all exported functions in src/api. Update docs/API.md to match the current signatures&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Update outdated documentation</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Read all exported functions in src/api. Update docs/API.md to match the current signatures&quot;</span>
 </span></code></pre></div>
 <h4 id="language-migration">Language Migration<a class="headerlink" href="#language-migration" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Convert React class components to hooks</span>
-</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Read Component.jsx. Rewrite it as a Functional Component using Hooks&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># Convert React class components to hooks</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Read Component.jsx. Rewrite it as a Functional Component using Hooks&quot;</span>
 </span></code></pre></div>
 <h3 id="average-user-use-cases-non-developers">Average User Use Cases (Non-Developers)<a class="headerlink" href="#average-user-use-cases-non-developers" title="Permanent link">&para;</a></h3>
 <h4 id="content-creation-and-marketing">Content Creation and Marketing<a class="headerlink" href="#content-creation-and-marketing" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># White papers, LinkedIn posts, video scripts</span>
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Write a white paper on [topic] using the style guide in docs/writing-style.md&quot;</span>
-</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
-</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="c1"># Social media content</span>
-</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Create 5 tweet thread concepts for [product launch]&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># White papers, LinkedIn posts, video scripts</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Write a white paper on [topic] using the style guide in docs/writing-style.md&quot;</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># Social media content</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Create 5 tweet thread concepts for [product launch]&quot;</span>
 </span></code></pre></div>
 <h4 id="translation-work">Translation Work<a class="headerlink" href="#translation-work" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Translate documents</span>
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Translate the content in jp/ folder to English following the style in TRANSLATION_NOTES.md&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># Translate documents</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Translate the content in jp/ folder to English following the style in TRANSLATION_NOTES.md&quot;</span>
 </span></code></pre></div>
 <h4 id="data-analysis-and-reporting">Data Analysis and Reporting<a class="headerlink" href="#data-analysis-and-reporting" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># Analyze data and generate reports</span>
-</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Analyze parcel data in data/ and generate summary report with trends&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Analyze data and generate reports</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Analyze parcel data in data/ and generate summary report with trends&quot;</span>
 </span></code></pre></div>
 <h4 id="file-organization">File Organization<a class="headerlink" href="#file-organization" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Organize downloads folder</span>
-</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Organize the downloads folder: put movies in Movies/, TV shows in TV/&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># Organize downloads folder</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Organize the downloads folder: put movies in Movies/, TV shows in TV/&quot;</span>
 </span></code></pre></div>
 <h4 id="excel-and-spreadsheet-work">Excel and Spreadsheet Work<a class="headerlink" href="#excel-and-spreadsheet-work" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># Generate formulas</span>
-</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Create a formula in column D that calculates the sum of columns A and B&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># Generate formulas</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Create a formula in column D that calculates the sum of columns A and B&quot;</span>
 </span></code></pre></div>
 <h3 id="common-real-world-examples">Common Real-World Examples<a class="headerlink" href="#common-real-world-examples" title="Permanent link">&para;</a></h3>
 <h4 id="legacy-code-refactoring">Legacy Code Refactoring<a class="headerlink" href="#legacy-code-refactoring" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>opencode<span class="w"> </span>start<span class="w"> </span><span class="s2">&quot;Take main.py. Split the database logic into db.py and the utils into utils.py&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>opencode<span class="w"> </span>start<span class="w"> </span><span class="s2">&quot;Take main.py. Split the database logic into db.py and the utils into utils.py&quot;</span>
 </span></code></pre></div>
 <h4 id="cicd-automated-code-review">CI/CD Automated Code Review<a class="headerlink" href="#cicd-automated-code-review" title="Permanent link">&para;</a></h4>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># .github/workflows/opencode-review.yml</span>
-</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencode-review</span>
-</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">pull_request</span><span class="p p-Indicator">]</span>
-</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="nt">jobs</span><span class="p">:</span>
-</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="w">  </span><span class="nt">opencode</span><span class="p">:</span>
-</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
-</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run OpenCode</span>
-</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anomalyco/opencode/github@latest</span>
-</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
-</span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="w">          </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anthropic/claude-sonnet-4-20250514</span>
-</span><span id="__span-33-13"><a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="w">          </span><span class="nt">prompt</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Code</span><span class="nv"> </span><span class="s">review</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">PR</span><span class="nv"> </span><span class="s">changes&quot;</span>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># .github/workflows/opencode-review.yml</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opencode-review</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">pull_request</span><span class="p p-Indicator">]</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="nt">jobs</span><span class="p">:</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="w">  </span><span class="nt">opencode</span><span class="p">:</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run OpenCode</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anomalyco/opencode/github@latest</span>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="w">          </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anthropic/claude-sonnet-4-20250514</span>
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="w">          </span><span class="nt">prompt</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Code</span><span class="nv"> </span><span class="s">review</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">PR</span><span class="nv"> </span><span class="s">changes&quot;</span>
 </span></code></pre></div>
 <h4 id="github-issue-triage">GitHub Issue Triage<a class="headerlink" href="#github-issue-triage" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># In a GitHub issue comment</span>
-</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>/opencode<span class="w"> </span>explain<span class="w"> </span>this<span class="w"> </span>issue
-</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
-</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># In a GitHub PR comment</span>
-</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>/opencode<span class="w"> </span>fix<span class="w"> </span>this
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># In a GitHub issue comment</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>/opencode<span class="w"> </span>explain<span class="w"> </span>this<span class="w"> </span>issue
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="c1"># In a GitHub PR comment</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>/opencode<span class="w"> </span>fix<span class="w"> </span>this
 </span></code></pre></div>
 <h4 id="database-operations-via-mcp">Database Operations via MCP<a class="headerlink" href="#database-operations-via-mcp" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># Connect to database via MCP</span>
-</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Show me the schema for the &#39;users&#39; table&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># Connect to database via MCP</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>opencode<span class="w"> </span>run<span class="w"> </span><span class="s2">&quot;Show me the schema for the &#39;users&#39; table&quot;</span>
 </span></code></pre></div>
 <h4 id="slack-bot-integration">Slack Bot Integration<a class="headerlink" href="#slack-bot-integration" title="Permanent link">&para;</a></h4>
 <p>Connect OpenCode to Slack for team questions like:</p>
@@ -4298,7 +4346,7 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 <li>Switch to Build mode to implement</li>
 </ol>
 <h4 id="agent-mode-autonomous">Agent Mode (Autonomous)<a class="headerlink" href="#agent-mode-autonomous" title="Permanent link">&para;</a></h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>opencode<span class="w"> </span>--agent
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>opencode<span class="w"> </span>--agent
 </span></code></pre></div>
 <p>Best for: Project setup, large refactors, debugging, testing, code migration.</p>
 <hr />
@@ -4389,44 +4437,47 @@ OpenCode works best on Windows through WSL (Windows Subsystem for Linux).</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="installation-issues">Installation Issues<a class="headerlink" href="#installation-issues" title="Permanent link">&para;</a></h3>
 <p><strong>Verify installation:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>opencode<span class="w"> </span>--version
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>opencode<span class="w"> </span>--version
 </span></code></pre></div>
 <p><strong>Update OpenCode:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># Re-run install script</span>
-</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1"># Re-run install script</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </span></code></pre></div>
 <h3 id="configuration-issues">Configuration Issues<a class="headerlink" href="#configuration-issues" title="Permanent link">&para;</a></h3>
 <p><strong>Check config syntax:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>cat<span class="w"> </span>~/.config/opencode/opencode.json
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Config locations checked in priority order:</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>cat<span class="w"> </span>~/.opencode.json<span class="w">                    </span><span class="c1"># Home directory</span>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>cat<span class="w"> </span>~/.config/opencode/opencode.json<span class="w">  </span><span class="c1"># XDG config directory</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>cat<span class="w"> </span>./opencode.json<span class="w">                </span><span class="c1"># Project directory</span>
 </span></code></pre></div>
 <p><strong>Validate JSON:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Use jq to validate</span>
-</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>cat<span class="w"> </span>~/.config/opencode/opencode.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1"># Use jq to validate any location</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>cat<span class="w"> </span>~/.opencode.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>.
 </span></code></pre></div>
 <h3 id="provider-issues">Provider Issues<a class="headerlink" href="#provider-issues" title="Permanent link">&para;</a></h3>
 <p><strong>Check API key:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>/opencode
-</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>/connect
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>/opencode
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>/connect
 </span></code></pre></div>
 <p><strong>Test connection:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>/opencode
-</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>/model<span class="w"> </span>&lt;model-name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>/opencode
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>/model<span class="w"> </span>&lt;model-name&gt;
 </span></code></pre></div>
 <h3 id="plugin-issues">Plugin Issues<a class="headerlink" href="#plugin-issues" title="Permanent link">&para;</a></h3>
 <p><strong>Verify plugin loading:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>opencode<span class="w"> </span>--version
-</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="c1"># Should list loaded plugins</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>opencode<span class="w"> </span>--version
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="c1"># Should list loaded plugins</span>
 </span></code></pre></div>
 <p><strong>Debug mode:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>opencode<span class="w"> </span>--debug
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>opencode<span class="w"> </span>--debug
 </span></code></pre></div>
 <h3 id="performance-issues">Performance Issues<a class="headerlink" href="#performance-issues" title="Permanent link">&para;</a></h3>
 <p><strong>Clear cache:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>~/.cache/opencode
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>~/.cache/opencode
 </span></code></pre></div>
 <p><strong>Check logs:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="c1"># Default log location</span>
-</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>~/.config/opencode/logs/
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="c1"># Default log location</span>
+</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>~/.config/opencode/logs/
 </span></code></pre></div>
 <hr />
 <h2 id="further-reading">Further Reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>

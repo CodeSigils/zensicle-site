@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A new project generated from the default template project.">
+        <meta name="description" content="Guide to free AI models for coding with OpenCode - including Big Pickle, Google AI Studio, Hugging Face, and other free LLM providers.">
       
       
         <meta name="author" content="Tom Geo">
@@ -59,6 +59,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"Jetbrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
@@ -227,7 +229,7 @@
   <span class="md-ellipsis">
     
   
-    Zensical
+    Code Sigils
   
 
     
@@ -281,6 +283,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -312,9 +318,12 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg>
   
   <span class="md-ellipsis">
     
@@ -327,8 +336,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
@@ -340,6 +355,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -483,84 +500,79 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#best-coding-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Best Coding Models
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#top-recommendation-qwen3-coder-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Top Recommendation: Qwen3-Coder-Next
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-notable-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Notable Models
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#opencode-free-models" class="md-nav__link">
+  <a href="#1-create-token-at-huggingfacecosettingstokens" class="md-nav__link">
     <span class="md-ellipsis">
       
-        OpenCode Free Models
+        1. Create token at huggingface.co/settings/tokens
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="OpenCode Free Models">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#needs-make-calls-to-inference-providers-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (needs "Make calls to Inference Providers" permission)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-run-auth-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Run auth login
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-select-hugging-face-when-prompted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Select Hugging Face when prompted
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enter-your-token-hf_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter your token: hf_...
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-select-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Select a model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Select a model">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#about-big-pickle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About Big Pickle
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Access
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#other-free-tiers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -609,8 +621,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#recommendations-by-use-case" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -670,8 +682,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#model-comparison-tables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -709,8 +721,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#todo-review-schedule" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -720,8 +732,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -729,6 +741,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -982,10 +999,12 @@
         
   
   
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75q.918 0 1.627.111a6.4 6.4 0 0 1 1.306.34v2.458a4 4 0 0 0-.643-.361 5 5 0 0 0-.717-.26 5.5 5.5 0 0 0-1.426-.2q-.45 0-.819.086a2.1 2.1 0 0 0-.623.242q-.254.156-.393.374a.9.9 0 0 0-.14.49q0 .294.156.529.156.234.443.444c.287.21.423.276.696.41q.41.203.926.416.705.296 1.266.628.561.333.963.753.402.418.614.957.213.538.214 1.253 0 .986-.373 1.656a3.03 3.03 0 0 1-1.012 1.085 4.4 4.4 0 0 1-1.487.596q-.85.18-1.79.18a10 10 0 0 1-1.84-.164 5.5 5.5 0 0 1-1.512-.493v-2.63a5.03 5.03 0 0 0 3.237 1.2q.5 0 .872-.09.373-.09.623-.25.249-.162.373-.38a1.02 1.02 0 0 0-.074-1.089 2.1 2.1 0 0 0-.537-.5 5.6 5.6 0 0 0-.807-.444 28 28 0 0 0-1.007-.436q-1.377-.575-2.053-1.405t-.676-2.005q0-.92.369-1.582.368-.662 1.004-1.089a4.5 4.5 0 0 1 1.47-.629 7.5 7.5 0 0 1 1.77-.201m-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+  
   <span class="md-ellipsis">
     
   
-    The OXC tools
+    OXC Formatter Guide
   
 
     
@@ -1076,84 +1095,79 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#best-coding-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Best Coding Models
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#top-recommendation-qwen3-coder-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Top Recommendation: Qwen3-Coder-Next
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-notable-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Notable Models
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#opencode-free-models" class="md-nav__link">
+  <a href="#1-create-token-at-huggingfacecosettingstokens" class="md-nav__link">
     <span class="md-ellipsis">
       
-        OpenCode Free Models
+        1. Create token at huggingface.co/settings/tokens
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="OpenCode Free Models">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#needs-make-calls-to-inference-providers-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (needs "Make calls to Inference Providers" permission)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-run-auth-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Run auth login
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-select-hugging-face-when-prompted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Select Hugging Face when prompted
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enter-your-token-hf_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter your token: hf_...
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-select-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Select a model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Select a model">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#about-big-pickle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About Big Pickle
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Access
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#other-free-tiers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1202,8 +1216,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#recommendations-by-use-case" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1263,8 +1277,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#model-comparison-tables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1302,8 +1316,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#todo-review-schedule" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1313,8 +1327,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1322,6 +1336,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1353,7 +1372,7 @@
       <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    Zensical
+    Code Sigils
   </span>
 
       </a>
@@ -1368,7 +1387,7 @@
     
     
       <li class="md-path__item">
-        <a href="../dolphin-llm-guide/" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
     AI
@@ -1388,8 +1407,6 @@
                 
                   
 
-  <h1 id="__skip">Free AI Models Guide</h1>
-
 <p><img alt="AI Models" src="/assets/images/opencode-screenshot.webp" width="800" /></p>
 <blockquote>
 <p><strong>Last Updated:</strong> April 2026</p>
@@ -1405,159 +1422,103 @@
 </ol>
 <hr />
 <h2 id="free-ai-models-overview">Free AI Models Overview<a class="headerlink" href="#free-ai-models-overview" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/XNm1pVab8-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-video-wrapper">
+  <iframe src="https://www.youtube.com/embed/XNm1pVab8-A" allowfullscreen></iframe>
+</div>
 
 <h2 id="hugging-face-inference-providers">Hugging Face Inference Providers<a class="headerlink" href="#hugging-face-inference-providers" title="Permanent link">&para;</a></h2>
 <p>OpenCode natively supports Hugging Face Inference Providers - giving you access to open models from 17+ providers.</p>
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/b665B04CWkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-video-wrapper">
+  <iframe src="https://www.youtube.com/embed/b665B04CWkI" allowfullscreen></iframe>
+</div>
 
 <h3 id="quick-setup">Quick Setup<a class="headerlink" href="#quick-setup" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 1. Create token at huggingface.co/settings/tokens</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">#    (needs &quot;Make calls to Inference Providers&quot; permission)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 2. Run auth login</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>opencode<span class="w"> </span>auth<span class="w"> </span>login
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 3. Select Hugging Face when prompted</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">#    Enter your token: hf_...</span>
+<div class="admonition tip">
+<p class="admonition-title">Hugging Face Setup</p>
+<p>```bash</p>
+<h1 id="1-create-token-at-huggingfacecosettingstokens">1. Create token at huggingface.co/settings/tokens<a class="headerlink" href="#1-create-token-at-huggingfacecosettingstokens" title="Permanent link">&para;</a></h1>
+<h1 id="needs-make-calls-to-inference-providers-permission">(needs "Make calls to Inference Providers" permission)<a class="headerlink" href="#needs-make-calls-to-inference-providers-permission" title="Permanent link">&para;</a></h1>
+<h1 id="2-run-auth-login">2. Run auth login<a class="headerlink" href="#2-run-auth-login" title="Permanent link">&para;</a></h1>
+<p>opencode auth login</p>
+<h1 id="3-select-hugging-face-when-prompted">3. Select Hugging Face when prompted<a class="headerlink" href="#3-select-hugging-face-when-prompted" title="Permanent link">&para;</a></h1>
+</div>
+<h1 id="enter-your-token-hf_">Enter your token: hf_...<a class="headerlink" href="#enter-your-token-hf_" title="Permanent link">&para;</a></h1>
+<h1 id="4-select-a-model">4. Select a model<a class="headerlink" href="#4-select-a-model" title="Permanent link">&para;</a></h1>
+<p>/models
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>### Best Coding Models
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| Model                 | Best For          | Provider    | Context | Price (Input/Output) |
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>| --------------------- | ----------------- | ----------- | ------- | -------------------- |
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>| **Qwen3-Coder-Next**  | Code generation   | Novita      | 131K    | $0.10/$1.50          |
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>| **Qwen2.5-Coder-32B** | Code reasoning    | Featherless | 131K    | Varies               |
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>| **DeepSeek-R1**       | Complex reasoning | Hyperbolic  | 131K    | Free tier            |
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>| **GLM-4.7 Flash**     | Fast/short tasks  | Zai         | 1M      | Free tier            |
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 4. Select a model</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>/models
-</span></code></pre></div>
-<h3 id="best-coding-models">Best Coding Models<a class="headerlink" href="#best-coding-models" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Best For</th>
-<th>Provider</th>
-<th>Context</th>
-<th>Price (Input/Output)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Qwen3-Coder-Next</strong></td>
-<td>Code generation</td>
-<td>Novita</td>
-<td>131K</td>
-<td><span class="arithmatex">\(0.10/\)</span>1.50</td>
-</tr>
-<tr>
-<td><strong>Qwen2.5-Coder-32B</strong></td>
-<td>Code reasoning</td>
-<td>Featherless</td>
-<td>131K</td>
-<td>Varies</td>
-</tr>
-<tr>
-<td><strong>DeepSeek-R1</strong></td>
-<td>Complex reasoning</td>
-<td>Hyperbolic</td>
-<td>131K</td>
-<td>Free tier</td>
-</tr>
-<tr>
-<td><strong>GLM-4.7 Flash</strong></td>
-<td>Fast/short tasks</td>
-<td>Zai</td>
-<td>1M</td>
-<td>Free tier</td>
-</tr>
-</tbody>
-</table>
-<h3 id="top-recommendation-qwen3-coder-next">Top Recommendation: Qwen3-Coder-Next<a class="headerlink" href="#top-recommendation-qwen3-coder-next" title="Permanent link">&para;</a></h3>
-<p><strong>Why it's like Claude/Big Pickle:</strong></p>
-<ul>
-<li>Code-specific training (trained specifically for coding)</li>
-<li>Strong on HumanEval, MBPP+ benchmarks</li>
-<li>Fast inference (128 tokens/sec via Novita)</li>
-<li>Excellent for code completion and generation</li>
-</ul>
-<p><strong>Benchmark Results:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>HumanEval</th>
-<th>HumanEval+</th>
-<th>MBPP+</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Qwen3-Coder-Next</td>
-<td>SOTA</td>
-<td>SOTA</td>
-<td>SOTA</td>
-</tr>
-<tr>
-<td>Qwen2.5-Coder-32B</td>
-<td>76.2%</td>
-<td>72.6%</td>
-<td>70.9%</td>
-</tr>
-</tbody>
-</table>
-<h3 id="other-notable-models">Other Notable Models<a class="headerlink" href="#other-notable-models" title="Permanent link">&para;</a></h3>
-<p><strong>For Reasoning:</strong></p>
-<ul>
-<li>DeepSeek-R1 - Chain-of-thought reasoning, great for complex logic</li>
-<li>Kimi-K2.5 - Fast, good for general tasks</li>
-<li>GLM-4.6 - Free tier available</li>
-</ul>
-<p><strong>For General Use:</strong></p>
-<ul>
-<li>Llama 3.1 8B - Fast, cheapest</li>
-<li>Qwen2.5 7B - Good balance</li>
-<li>Gemma 4 31B - Google's best</li>
-</ul>
-<p><strong>Resources:</strong></p>
-<ul>
-<li><a href="https://huggingface.co/inference/models">HF Supported Models</a></li>
-<li><a href="https://huggingface.co/docs/inference-providers/en/index">HF Inference Providers</a></li>
-</ul>
-<hr />
-<h2 id="opencode-free-models">OpenCode Free Models<a class="headerlink" href="#opencode-free-models" title="Permanent link">&para;</a></h2>
-<p>OpenCode offers some built-in free models developed by <a href="https://zenlabs.ai/">Zen Labs</a>:</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Best For</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Big Pickle</strong></td>
-<td>General coding</td>
-<td>OpenCode's free tier - developed by Zen</td>
-</tr>
-<tr>
-<td><strong>GLM 4.7 Free</strong></td>
-<td>General tasks</td>
-<td>Limited</td>
-</tr>
-<tr>
-<td><strong>MiniMax M2.1 Free</strong></td>
-<td>General tasks</td>
-<td>Limited</td>
-</tr>
-</tbody>
-</table>
-<h3 id="about-big-pickle">About Big Pickle<a class="headerlink" href="#about-big-pickle" title="Permanent link">&para;</a></h3>
-<p><strong>Big Pickle</strong> is a free LLM developed by <a href="https://zenlabs.ai/">Zen Labs</a>, the team behind OpenCode. It's available directly in OpenCode and optimized for coding tasks.</p>
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/tuW0IKNZ2UI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h3 id="how-to-access">How to Access<a class="headerlink" href="#how-to-access" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>opencode
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># In terminal:</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>/models
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Select from available free models</span>
-</span></code></pre></div>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>### Top Recommendation: Qwen3-Coder-Next
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>**Why it&#39;s like Claude/Big Pickle:**
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>- Code-specific training (trained specifically for coding)
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>- Strong on HumanEval, MBPP+ benchmarks
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>- Fast inference (128 tokens/sec via Novita)
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>- Excellent for code completion and generation
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>**Benchmark Results:**
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>| Model             | HumanEval | HumanEval+ | MBPP+ |
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>| ----------------- | --------- | ---------- | ----- |
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>| Qwen3-Coder-Next  | SOTA      | SOTA       | SOTA  |
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>| Qwen2.5-Coder-32B | 76.2%     | 72.6%      | 70.9% |
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>### Other Notable Models
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>**For Reasoning:**
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>- DeepSeek-R1 - Chain-of-thought reasoning, great for complex logic
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>- Kimi-K2.5 - Fast, good for general tasks
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>- GLM-4.6 - Free tier available
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>**For General Use:**
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>- Llama 3.1 8B - Fast, cheapest
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>- Qwen2.5 7B - Good balance
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>- Gemma 4 31B - Google&#39;s best
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>**Resources:**
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>- [HF Supported Models](https://huggingface.co/inference/models)
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>- [HF Inference Providers](https://huggingface.co/docs/inference-providers/en/index)
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>---
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>## OpenCode Free Models
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>OpenCode offers some built-in free models developed by [Zen Labs](https://zenlabs.ai/):
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>| Model                 | Best For       | Notes                |
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>| :--- | :--- | :--- |
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>| **Big Pickle**        | General coding | OpenCode&#39;s free tier - developed by Zen |
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>| **GLM 4.7 Free**      | General tasks  | Limited              |
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>| **MiniMax M2.1 Free** | General tasks  | Limited              |
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>### About Big Pickle
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>**Big Pickle** is a free LLM developed by [Zen Labs](https://zenlabs.ai/), the team behind OpenCode. It&#39;s available directly in OpenCode and optimized for coding tasks.
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>&lt;div class=&quot;youtube-video-wrapper&quot;&gt;
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>  &lt;iframe src=&quot;https://www.youtube.com/embed/tuW0IKNZ2UI&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>&lt;/div&gt;
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>### How to Access
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>```bash
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>opencode
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a># In terminal:
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>/models
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a># Select from available free models
+</span></code></pre></div></p>
 <hr />
 <h2 id="other-free-tiers">Other Free Tiers<a class="headerlink" href="#other-free-tiers" title="Permanent link">&para;</a></h2>
 <h3 id="free-tier-comparison">Free Tier Comparison<a class="headerlink" href="#free-tier-comparison" title="Permanent link">&para;</a></h3>
@@ -1610,12 +1571,15 @@
 </tbody>
 </table>
 <h3 id="google-ai-studio-recommended-for-free">Google AI Studio (Recommended for Free)<a class="headerlink" href="#google-ai-studio-recommended-for-free" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Best Free Option</p>
 <ul>
 <li>Gemini 2.5 Pro (best free model)</li>
 <li>Gemini 2.5 Flash (fastest)</li>
 <li>1M token context</li>
 <li>Sign up at aistudio.google.com</li>
 </ul>
+</div>
 <h3 id="github-models">GitHub Models<a class="headerlink" href="#github-models" title="Permanent link">&para;</a></h3>
 <ul>
 <li>GPT-4.1 (excellent coding)</li>

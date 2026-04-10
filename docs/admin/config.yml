@@ -56,6 +56,13 @@ collections:
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string", required: false }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+              hint: "Short summary for SEO",
+            }
           - { label: "Icon", name: "icon", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
 

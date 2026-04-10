@@ -6,6 +6,12 @@ backend:
 media_folder: docs/assets/images
 public_folder: /assets/images
 
+media_library:
+  config:
+    image:
+      choose_url: true
+      folder: docs/assets/images
+
 site_url: https://codesigils.github.io/
 
 collections:
@@ -19,6 +25,20 @@ collections:
     format: frontmatter
     fields:
       - { label: "Title", name: "title", widget: "string", required: false }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+          hint: "Short summary for SEO and previews",
+        }
+      - {
+          label: "Keywords",
+          name: "keywords",
+          widget: "list",
+          required: false,
+          hint: "Comma-separated keywords for SEO",
+        }
       - {
           label: "Icon",
           name: "icon",
@@ -36,6 +56,13 @@ collections:
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string", required: false }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+              hint: "Short summary for SEO",
+            }
           - { label: "Icon", name: "icon", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
 
@@ -43,11 +70,25 @@ collections:
     label: "JS-TS Section"
     folder: "docs/JS-TS"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{slug}}"
     extension: md
     format: frontmatter
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+          hint: "Short summary for SEO",
+        }
+      - {
+          label: "Keywords",
+          name: "keywords",
+          widget: "list",
+          required: false,
+          hint: "Comma-separated keywords for SEO",
+        }
       - { label: "Icon", name: "icon", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -55,10 +96,24 @@ collections:
     label: "AI Section"
     folder: "docs/AI"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{slug}}"
     extension: md
     format: frontmatter
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+          hint: "Short summary for SEO",
+        }
+      - {
+          label: "Keywords",
+          name: "keywords",
+          widget: "list",
+          required: false,
+          hint: "Comma-separated keywords for SEO",
+        }
       - { label: "Icon", name: "icon", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }

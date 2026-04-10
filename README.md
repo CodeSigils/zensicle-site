@@ -1,6 +1,6 @@
 # Code Sigils
 
-Personal technical documentation site featuring guides, tutorials, and notes on AI coding tools, JavaScript/TypeScript, and development experiments.
+Personal blog on technology, programming, AI tools, books, tutorials, and whatever catches my interest.
 
 ## About
 
