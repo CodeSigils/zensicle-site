@@ -13,18 +13,58 @@ keywords:
   - books
 ---
 
-Zensicle is a Python static site generator written by the MKDocs team.
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+## Why Zensical?
 
-## Commands
+This site is built with [Zensical](https://zensical.org) - a modern Python static site generator created by the Material for MkDocs team.
 
-- [`zensical new`][new] - Create a new project
-- [`zensical serve`][serve] - Start local web server
-- [`zensical build`][build] - Build your site
+### The Philosophy
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+Zensical is the **evolution of Material for MkDocs**. The same team that brought you the popular MkDocs theme now built their own SSG from the ground up in Rust, focusing on:
+
+- **Performance**: Built in Rust - blazing fast builds
+- **Scale**: Handles 10,000+ articles without breaking a sweat
+- **Batteries Included**: 60+ features enabled out of the box
+- **Compatibility**: Same Markdown syntax, same workflow
+
+### Why I Chose Zensical
+
+I migrated from **Astro** after hitting scaling issues. When your knowledge base grows to thousands of articles, you need:
+
+!!! tip "What Matters at Scale"
+
+    - **Build Speed**: No more waiting 10 minutes for builds
+    - **Memory Efficiency**: Doesn't eat your RAM
+    - **Instant Navigation**: Client-side navigation that just works
+    - **Search**: Built-in search that scales
+
+Zensical delivers all of this while keeping the **Markdown-first workflow** I love.
+
+### MkDocs Roots
+
+For users of Material for MkDocs, Zensical feels familiar because it **is** familiar:
+
+- Same Markdown extensions
+- Similar theme architecture  
+- Compatible configuration
+- The team behind it understands documentation
+
+It's not a rewrite - it's a **reimagination** built for modern needs.
+
+## Quick Start
+
+```bash
+# Install
+pip install zensical
+
+# Create new site
+zensical new my-docs
+
+# Build
+zensical build --clean
+
+# Serve locally
+zensical serve
+```
 
 ## Examples
 
