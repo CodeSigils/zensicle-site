@@ -67,13 +67,15 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 
 ### Prerequisites
 
+!!! tip "Requirements Before You Start"
+
 1. A modern terminal emulator (WezTerm, Alacritty, Ghostty, or Kitty recommended)
 2. API keys for your preferred LLM provider(s)
 3. Node.js 18+ (required for MCP servers and plugins)
 
 #### Node.js Installation (Common "Foot Guns" to Avoid)
 
-> **⚠️ AVOID THESE COMMON MISTAKES:**
+!!! warning "Common Mistakes to Avoid"
 
 | ❌ Don't Do This | ✅ Do This Instead |
 | --- | --- |
@@ -100,7 +102,9 @@ mise use -g node@lts
 node --version
 ```
 
-> **Note for Distrobox Users**: If you're using distrobox to develop in a different distribution, be aware that mise-installed packages (like Node.js tools via `mise use -g node@lts`) can sometimes conflict with packages installed in the host distribution's package manager. For example, tools installed globally via `pipx` on the host may not be accessible inside the container, or vice versa. This is because distrobox shares the host's home directory but uses the container's binary paths. If you encounter issues, consider whether you're running tools from the host or the container — consistency is key.
+??? tip "Distrobox Users"
+
+    If you're using distrobox to develop in a different distribution, be aware that mise-installed packages (like Node.js tools via `mise use -g node@lts`) can sometimes conflict with packages installed in the host distribution's package manager. For example, tools installed globally via `pipx` on the host may not be accessible inside the container, or vice versa. This is because distrobox shares the host's home directory but uses the container's binary paths. If you encounter issues, consider whether you're running tools from the host or the container — consistency is key.
 
 #### Alternative: fnm (Fast Node Manager)
 
@@ -133,15 +137,17 @@ pnpm --version
 
 #### Quick Verification
 
-```bash
-# 1. Open a BRAND NEW terminal (not the same one)
-# 2. Run:
-node --version
-npm --version
+??? tip "How to Verify"
 
-# Both should show versions
-# If errors → Node not persistent
-```
+    1. Open a BRAND NEW terminal (not the same one)
+    2. Run:
+    
+    ```bash
+    node --version
+    npm --version
+    ```
+    
+    Both should show versions. If errors → Node not persistent.
 
 #### Why This Matters for MCP
 
@@ -152,6 +158,8 @@ MCP servers run as subprocesses. If Node isn't persistent:
 - Plugin loading fails
 
 ### Install via Script (Recommended)
+
+!!! tip "Quick Install (Recommended)"
 
 ```bash
 # Official install script (recommended)
