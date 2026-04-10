@@ -31,14 +31,16 @@ OpenCode natively supports Hugging Face Inference Providers - giving you access 
 
 ### Quick Setup
 
-```bash
-# 1. Create token at huggingface.co/settings/tokens
-#    (needs "Make calls to Inference Providers" permission)
+!!! tip "Hugging Face Setup"
 
-# 2. Run auth login
-opencode auth login
-
-# 3. Select Hugging Face when prompted
+    ```bash
+    # 1. Create token at huggingface.co/settings/tokens
+    #    (needs "Make calls to Inference Providers" permission)
+    
+    # 2. Run auth login
+    opencode auth login
+    
+    # 3. Select Hugging Face when prompted
 #    Enter your token: hf_...
 
 # 4. Select a model
@@ -135,10 +137,12 @@ opencode
 
 ### Google AI Studio (Recommended for Free)
 
-- Gemini 2.5 Pro (best free model)
-- Gemini 2.5 Flash (fastest)
-- 1M token context
-- Sign up at aistudio.google.com
+!!! tip "Best Free Option"
+
+    - Gemini 2.5 Pro (best free model)
+    - Gemini 2.5 Flash (fastest)
+    - 1M token context
+    - Sign up at aistudio.google.com
 
 ### GitHub Models
 
