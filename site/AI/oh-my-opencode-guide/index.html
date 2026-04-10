@@ -29,7 +29,7 @@
     
     
       
-        <title>Oh My OpenCode Guide - Code Sigils</title>
+        <title>Oh My OpenAgent Guide - Code Sigils</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Oh My OpenCode Guide
+              Oh My OpenAgent Guide
             
           </span>
         </div>
@@ -514,7 +514,7 @@
   <span class="md-ellipsis">
     
   
-    Oh My OpenCode Guide
+    Oh My OpenAgent Guide
   
 
     
@@ -534,7 +534,7 @@
   <span class="md-ellipsis">
     
   
-    Oh My OpenCode Guide
+    Oh My OpenAgent Guide
   
 
     
@@ -2130,7 +2130,7 @@
                 
                   
 
-  <h1 id="__skip">Oh My OpenCode Guide</h1>
+  <h1 id="__skip">Oh My OpenAgent Guide</h1>
 
 <p><img alt="Oh My OpenCode" src="/assets/images/oh-my-opencode.png" width="900" /></p>
 <p>A batteries-included orchestration layer for OpenCode that adds specialized agents, hooks, MCPs, and workflow automation.</p>
@@ -2187,12 +2187,12 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bunx<span class="w"> </span>oh-my-openagent<span class="w"> </span>install
 </span></code></pre></div>
 <p><strong>Using npm:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>oh-my-opencode
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>oh-my-opencode<span class="w">  </span><span class="c1"># or: npm install -g oh-my-openagent</span>
 </span></code></pre></div>
 <p><strong>Manual installation:</strong>
 Add to your OpenCode config file (<code>~/.config/opencode/opencode.json</code> or <code>.opencode/opencode.json</code>):</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;plugin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;oh-my-opencode&quot;</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;plugin&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;oh-my-openagent&quot;</span><span class="p">]</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h3>
@@ -2563,8 +2563,8 @@ Perfect for finding similar implementations or examples.</p>
 <h3 id="configuration-files">Configuration Files<a class="headerlink" href="#configuration-files" title="Permanent link">&para;</a></h3>
 <p>Oh My OpenCode looks for configuration in this order:</p>
 <ol>
-<li><code>.opencode/oh-my-opencode.json</code> (project-specific, highest priority)</li>
-<li><code>~/.config/opencode/oh-my-opencode.json</code> (user-wide)</li>
+<li><code>.opencode/oh-my-openagent.json</code> (project-specific, highest priority)</li>
+<li><code>~/.config/opencode/oh-my-openagent.json</code> (user-wide)</li>
 </ol>
 <h3 id="example-configuration">Example Configuration<a class="headerlink" href="#example-configuration" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{
@@ -2605,7 +2605,7 @@ Perfect for finding similar implementations or examples.</p>
 </span><span id="__span-7-36"><a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>}
 </span></code></pre></div>
 <h3 id="plugin-specific-configuration">Plugin-Specific Configuration<a class="headerlink" href="#plugin-specific-configuration" title="Permanent link">&para;</a></h3>
-<p>You can also create <code>oh-my-opencode.json</code> files for specific plugins:</p>
+<p>You can also create <code>oh-my-openagent.json</code> files for specific plugins:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;disabled_tools&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;my_tool&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;another_tool&quot;</span><span class="p">],</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">&quot;disabled_agents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;some_agent&quot;</span><span class="p">]</span>
@@ -2618,7 +2618,7 @@ Perfect for finding similar implementations or examples.</p>
 <h3 id="complex-build-pipelines">Complex Build Pipelines<a class="headerlink" href="#complex-build-pipelines" title="Permanent link">&para;</a></h3>
 <p>Configure custom build systems and have the agent understand your entire pipeline.</p>
 <h3 id="team-workflows">Team Workflows<a class="headerlink" href="#team-workflows" title="Permanent link">&para;</a></h3>
-<p>Share <code>oh-my-opencode.json</code> in your repo so the entire team uses the same setup.</p>
+<p>Share <code>oh-my-openagent.json</code> in your repo so the entire team uses the same setup.</p>
 <h3 id="documentation-projects">Documentation Projects<a class="headerlink" href="#documentation-projects" title="Permanent link">&para;</a></h3>
 <p>Use the Librarian agent for docs-heavy projects and Hugo/React/Vite stacks.</p>
 <h3 id="large-codebases">Large Codebases<a class="headerlink" href="#large-codebases" title="Permanent link">&para;</a></h3>

@@ -1,5 +1,5 @@
 ---
-title: Oh My OpenCode Guide
+title: Oh My OpenAgent Guide
 icon: lucide/box
 ---
 
@@ -73,7 +73,7 @@ bunx oh-my-openagent install
 **Using npm:**
 
 ```bash
-npm install -g oh-my-opencode
+npm install -g oh-my-opencode  # or: npm install -g oh-my-openagent
 ```
 
 **Manual installation:**
@@ -81,7 +81,7 @@ Add to your OpenCode config file (`~/.config/opencode/opencode.json` or `.openco
 
 ```json
 {
-  "plugin": ["oh-my-opencode"]
+  "plugin": ["oh-my-openagent"]
 }
 ```
 
@@ -346,8 +346,8 @@ Browse the full ecosystem at:
 
 Oh My OpenCode looks for configuration in this order:
 
-1. `.opencode/oh-my-opencode.json` (project-specific, highest priority)
-2. `~/.config/opencode/oh-my-opencode.json` (user-wide)
+1. `.opencode/oh-my-openagent.json` (project-specific, highest priority)
+2. `~/.config/opencode/oh-my-openagent.json` (user-wide)
 
 ### Example Configuration
 
@@ -392,7 +392,7 @@ Oh My OpenCode looks for configuration in this order:
 
 ### Plugin-Specific Configuration
 
-You can also create `oh-my-opencode.json` files for specific plugins:
+You can also create `oh-my-openagent.json` files for specific plugins:
 
 ```json
 {
@@ -415,7 +415,7 @@ Configure custom build systems and have the agent understand your entire pipelin
 
 ### Team Workflows
 
-Share `oh-my-opencode.json` in your repo so the entire team uses the same setup.
+Share `oh-my-openagent.json` in your repo so the entire team uses the same setup.
 
 ### Documentation Projects
 
