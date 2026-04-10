@@ -633,7 +633,7 @@ Complete Claude Code compatibility for OpenCode.
       },
     },
   },
-  "plugin": ["oh-my-opencode"],
+  "plugin": ["oh-my-openagent"],
   "mcp": {
     "enabled": true,
   },
