@@ -19,9 +19,15 @@ icon: lucide/bot
 
 ---
 
+## Free AI Models Overview
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/XNm1pVab8-A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Hugging Face Inference Providers
 
 OpenCode natively supports Hugging Face Inference Providers - giving you access to open models from 17+ providers.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/b665B04CWkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Quick Setup
 
