@@ -23,21 +23,21 @@ BrowserOS is an agentic browser — a Chrome-based browser with a built-in MCP (
 
 BrowserOS is an AI-native browser built on Chromium (version 146) that provides:
 
-| Feature | Description |
-| :--- | :--- |
-| **MCP Server** | Built-in server on `localhost:9200` exposing all tools via JSON-RPC |
-| **Tab Management** | Group, organize, move tabs with full metadata |
-| **Hidden Tabs** | Run background automation without disturbing user's view |
-| **Bookmarks API** | Full CRUD on browser bookmarks |
-| **History API** | Search and manage browsing history |
-| **Tab Groups** | Organize tabs into colored groups |
+| Feature             | Description                                                              |
+| :------------------ | :----------------------------------------------------------------------- |
+| **MCP Server**      | Built-in server on `localhost:9201` exposing all tools via JSON-RPC      |
+| **Tab Management**  | Group, organize, move tabs with full metadata                            |
+| **Hidden Tabs**     | Run background automation without disturbing user's view                 |
+| **Bookmarks API**   | Full CRUD on browser bookmarks                                           |
+| **History API**     | Search and manage browsing history                                       |
+| **Tab Groups**      | Organize tabs into colored groups                                        |
 | **Built-in Skills** | 12 pre-built workflows (deep-research, extract-data, monitor-page, etc.) |
-| **Screenshots** | Full-page and element-level screenshots |
-| **PDF Export** | Save any page as PDF |
-| **Connect Apps** | Integration with 40+ services (Gmail, GitHub, Slack, etc.) |
+| **Screenshots**     | Full-page and element-level screenshots                                  |
+| **PDF Export**      | Save any page as PDF                                                     |
+| **Connect Apps**    | Integration with 40+ services (Gmail, GitHub, Slack, etc.)               |
 
 !!! tip "Why Use BrowserOS with Hermes?"
-
+<!-- markdownlint-disable-next-line MD046 -->
     - **Natural language control** — Tell Hermes what to do in the browser, and it executes autonomously
     - **Persistent browser state** — Browser tabs, history, bookmarks, and sessions persist across conversations
     - **MCP-first design** — Tools are exposed standards-compliant for any MCP client
@@ -45,12 +45,12 @@ BrowserOS is an AI-native browser built on Chromium (version 146) that provides:
 
 ### When to Use BrowserOS vs Hermes Browser Tools
 
-| Use Case | Tool |
-| :--- | :--- |
-| **Complex multi-step workflows** | BrowserOS MCP tools — full control, persistent tabs |
-| **Quick URL checks** | Hermes built-in browser — simpler, ephemeral |
-| **Research, extraction, monitoring** | BrowserOS — stateful, resumable |
-| **Simple navigation + screenshot** | Either works |
+| Use Case                             | Tool                                                |
+| :----------------------------------- | :-------------------------------------------------- |
+| **Complex multi-step workflows**     | BrowserOS MCP tools — full control, persistent tabs |
+| **Quick URL checks**                 | Hermes built-in browser — simpler, ephemeral        |
+| **Research, extraction, monitoring** | BrowserOS — stateful, resumable                     |
+| **Simple navigation + screenshot**   | Either works                                        |
 
 ---
 
@@ -65,6 +65,7 @@ BrowserOS is an AI-native browser built on Chromium (version 146) that provides:
 ### Quick Start
 
 1. Browse to the BrowserOS AppImage and run it:
+
    ```bash
    ~/Downloads/BrowserOS
    ```
@@ -72,28 +73,31 @@ BrowserOS is an AI-native browser built on Chromium (version 146) that provides:
 2. Wait for the browser window to open and the server to start.
 
 3. Verify the MCP server is running:
+
    ```bash
-   curl http://127.0.0.1:9200/health
+   curl http://127.0.0.1:9201/health
    # Returns: {"status": "ok", "cdpConnected": true}
    ```
 
 4. Ensure Hermes config has the MCP server:
+
    ```yaml
    # ~/.hermes/config.yaml
    mcp_servers:
      browseros:
-       url: "http://127.0.0.1:9200/mcp"
+       url: "http://127.0.0.1:9201/mcp"
        timeout: 120
        connect_timeout: 30
    ```
 
 5. Restart Hermes to pick up the config:
+
    ```bash
    hermes
    ```
 
 !!! warning "Common Setup Issues"
-
+<!-- markdownlint-disable-next-line MD046 -->
     | Issue | Solution |
     | :--- | :--- |
     | MCP connection refused | Start BrowserOS: `~/Downloads/BrowserOS` |
@@ -103,6 +107,7 @@ BrowserOS is an AI-native browser built on Chromium (version 146) that provides:
 ### Verification
 
 After restart, you should see:
+
 ```
 MCP servers have been reloaded. Added servers: browseros.
 70 MCP tool(s) now available.
@@ -118,115 +123,115 @@ BrowserOS exposes 66 tools across 7 categories:
 
 ### 1. Page/Tab Management
 
-| Tool | Description |
-| :--- | :--- |
-| `get_active_page` | Get the currently active (focused) page |
-| `list_pages` | List all open tabs |
-| `navigate_page` | Navigate to URL, or back/forward/reload |
-| `new_page` | Open a new tab (background by default) |
-| `new_hidden_page` | Open a hidden tab for background work |
-| `show_page` | Restore a hidden tab to visibility |
-| `move_page` | Move a tab to a different window/position |
-| `close_page` | Close a tab |
+| Tool              | Description                               |
+| :---------------- | :---------------------------------------- |
+| `get_active_page` | Get the currently active (focused) page   |
+| `list_pages`      | List all open tabs                        |
+| `navigate_page`   | Navigate to URL, or back/forward/reload   |
+| `new_page`        | Open a new tab (background by default)    |
+| `new_hidden_page` | Open a hidden tab for background work     |
+| `show_page`       | Restore a hidden tab to visibility        |
+| `move_page`       | Move a tab to a different window/position |
+| `close_page`      | Close a tab                               |
 
 ### 2. Content Extraction
 
-| Tool | Description |
-| :--- | :--- |
-| `take_snapshot` | Get interactive element IDs for automation |
-| `take_enhanced_snapshot` | Detailed accessibility tree with context |
-| `get_page_content` | Extract clean markdown content |
-| `get_page_links` | Extract all links as `[text](url)` |
-| `get_dom` | Get raw HTML DOM structure |
-| `search_dom` | Search DOM with text/CSS/XPath |
-| `get_console_logs` | Get browser console output |
+| Tool                     | Description                                |
+| :----------------------- | :----------------------------------------- |
+| `take_snapshot`          | Get interactive element IDs for automation |
+| `take_enhanced_snapshot` | Detailed accessibility tree with context   |
+| `get_page_content`       | Extract clean markdown content             |
+| `get_page_links`         | Extract all links as `[text](url)`         |
+| `get_dom`                | Get raw HTML DOM structure                 |
+| `search_dom`             | Search DOM with text/CSS/XPath             |
+| `get_console_logs`       | Get browser console output                 |
 
 ### 3. Interaction
 
-| Tool | Description |
-| :--- | :--- |
-| `click` | Click an element by snapshot ID |
-| `click_at` | Click at coordinates |
-| `hover` | Hover over an element |
-| `hover_at` | Hover at coordinates |
-| `type_at` | Type at coordinates |
-| `drag_at` | Drag from one coordinate to another |
-| `focus` | Focus an element |
-| `clear` | Clear input text |
-| `fill` | Type into an input |
-| `check` | Check a checkbox/radio |
-| `uncheck` | Uncheck a checkbox |
-| `upload_file` | Upload file to input |
-| `press_key` | Press a key/key combo |
-| `drag` | Drag from element to element/coords |
-| `scroll` | Scroll page or element |
-| `handle_dialog` | Accept/dismiss JS dialog |
-| `select_option` | Select dropdown option |
+| Tool            | Description                         |
+| :-------------- | :---------------------------------- |
+| `click`         | Click an element by snapshot ID     |
+| `click_at`      | Click at coordinates                |
+| `hover`         | Hover over an element               |
+| `hover_at`      | Hover at coordinates                |
+| `type_at`       | Type at coordinates                 |
+| `drag_at`       | Drag from one coordinate to another |
+| `focus`         | Focus an element                    |
+| `clear`         | Clear input text                    |
+| `fill`          | Type into an input                  |
+| `check`         | Check a checkbox/radio              |
+| `uncheck`       | Uncheck a checkbox                  |
+| `upload_file`   | Upload file to input                |
+| `press_key`     | Press a key/key combo               |
+| `drag`          | Drag from element to element/coords |
+| `scroll`        | Scroll page or element              |
+| `handle_dialog` | Accept/dismiss JS dialog            |
+| `select_option` | Select dropdown option              |
 
 ### 4. Media & Export
 
-| Tool | Description |
-| :--- | :--- |
+| Tool              | Description                |
+| :---------------- | :------------------------- |
 | `take_screenshot` | Screenshot of current page |
-| `save_pdf` | Save page as PDF |
-| `save_screenshot` | Screenshot to file |
-| `download_file` | Click to download file |
+| `save_pdf`        | Save page as PDF           |
+| `save_screenshot` | Screenshot to file         |
+| `download_file`   | Click to download file     |
 
 ### 5. Window Management
 
-| Tool | Description |
-| :--- | :--- |
-| `list_windows` | List all windows |
-| `create_window` | Create new window |
+| Tool                   | Description          |
+| :--------------------- | :------------------- |
+| `list_windows`         | List all windows     |
+| `create_window`        | Create new window    |
 | `create_hidden_window` | Create hidden window |
-| `close_window` | Close window |
-| `activate_window` | Focus window |
+| `close_window`         | Close window         |
+| `activate_window`      | Focus window         |
 
 ### 6. Bookmarks
 
-| Tool | Description |
-| :--- | :--- |
-| `get_bookmarks` | List all bookmarks |
-| `create_bookmark` | Create bookmark or folder |
-| `remove_bookmark` | Remove bookmark/folder |
-| `update_bookmark` | Update title/URL |
-| `move_bookmark` | Move to folder |
-| `search_bookmarks` | Search by title/URL |
+| Tool               | Description               |
+| :----------------- | :------------------------ |
+| `get_bookmarks`    | List all bookmarks        |
+| `create_bookmark`  | Create bookmark or folder |
+| `remove_bookmark`  | Remove bookmark/folder    |
+| `update_bookmark`  | Update title/URL          |
+| `move_bookmark`    | Move to folder            |
+| `search_bookmarks` | Search by title/URL       |
 
 ### 7. History
 
-| Tool | Description |
-| :--- | :--- |
-| `search_history` | Search history |
-| `get_recent_history` | Recent items |
-| `delete_history_url` | Delete specific URL |
+| Tool                   | Description          |
+| :--------------------- | :------------------- |
+| `search_history`       | Search history       |
+| `get_recent_history`   | Recent items         |
+| `delete_history_url`   | Delete specific URL  |
 | `delete_history_range` | Delete by date range |
 
 ### 8. Tab Groups
 
-| Tool | Description |
-| :--- | :--- |
-| `list_tab_groups` | List all groups |
-| `group_tabs` | Group tabs |
+| Tool               | Description                  |
+| :----------------- | :--------------------------- |
+| `list_tab_groups`  | List all groups              |
+| `group_tabs`       | Group tabs                   |
 | `update_tab_group` | Update title/color/collapsed |
-| `ungroup_tabs` | Remove from group |
-| `close_tab_group` | Close group and tabs |
+| `ungroup_tabs`     | Remove from group            |
+| `close_tab_group`  | Close group and tabs         |
 
 ### 9. Script Execution
 
-| Tool | Description |
-| :--- | :--- |
+| Tool              | Description                        |
+| :---------------- | :--------------------------------- |
 | `evaluate_script` | Execute JavaScript in page context |
 
 ### 10. Connect Apps (40+ integrations)
 
-| Tool | Description |
-| :--- | :--- |
-| `discover_server_categories_or_actions` | Discover available services |
-| `get_category_actions` | Get actions for a category |
-| `get_action_details` | Get action parameters |
-| `execute_action` | Execute a Connect App action |
-| `handle_auth_failure` | Handle auth errors |
+| Tool                                    | Description                  |
+| :-------------------------------------- | :--------------------------- |
+| `discover_server_categories_or_actions` | Discover available services  |
+| `get_category_actions`                  | Get actions for a category   |
+| `get_action_details`                    | Get action parameters        |
+| `execute_action`                        | Execute a Connect App action |
+| `handle_auth_failure`                   | Handle auth errors           |
 
 ---
 
@@ -235,9 +240,11 @@ BrowserOS exposes 66 tools across 7 categories:
 ### Example 1: Quick Page Summary
 
 **Request:**
+
 > "Summarize the current state of quantum computing from Wikipedia"
 
 **Tools used:**
+
 1. `navigate_page` → go to Wikipedia quantum computing page
 2. `get_page_content` → extract clean markdown
 3. Summarize the content
@@ -245,9 +252,11 @@ BrowserOS exposes 66 tools across 7 categories:
 ### Example 2: Multi-Source Research
 
 **Request:**
+
 > "Research the best noise-canceling headphones from 5 sources and create a comparison table"
 
 **Workflow:**
+
 1. Create workspace: `create_hidden_window`
 2. Open 5 hidden tabs: `new_hidden_page` × 5
 3. Navigate each: `navigate_page`
@@ -260,9 +269,11 @@ BrowserOS exposes 66 tools across 7 categories:
 ### Example 3: Product Price Tracking
 
 **Request:**
+
 > "Track the price of 'NVIDIA RTX 5090' on Amazon, Newegg, and Best Buy. Alert me if any drop below $1000."
 
 **Workflow:**
+
 1. Create 3 hidden tabs for each retailer
 2. Navigate to product pages
 3. Use `evaluate_script` to extract price text
@@ -273,9 +284,11 @@ BrowserOS exposes 66 tools across 7 categories:
 ### Example 4: Form Submission
 
 **Request:**
+
 > "Fill out the signup form at example.com/signup with test credentials"
 
 **Tools used:**
+
 1. `navigate_page` → go to form
 2. `take_snapshot` → get element IDs
 3. `fill` → fill name/email fields
@@ -286,18 +299,22 @@ BrowserOS exposes 66 tools across 7 categories:
 ### Example 5: Bookmarks Management
 
 **Request:**
+
 > "Create a bookmark folder for 'AI Research' and save these 5 URLs as bookmarks inside it"
 
 **Workflow:**
+
 1. `create_bookmark` → create folder
 2. `create_bookmark` × 5 → add each URL with the folder ID
 
 ### Example 6: Screenshot Walkthrough
 
 **Request:**
+
 > "Create a step-by-step screenshot walkthrough of logging into Gmail"
 
 **Workflow:**
+
 1. `new_page` → navigate to Gmail
 2. `take_snapshot` → get login elements
 3. `save_screenshot` → capture each step
@@ -310,20 +327,20 @@ BrowserOS exposes 66 tools across 7 categories:
 
 BrowserOS comes with 12 built-in skills at `~/.browseros/skills/builtin/`:
 
-| Skill | Description |
-| :--- | :--- |
-| `deep-research` | Multi-source research with HTML report + PDF |
-| `extract-data` | Extract structured data (tables, products, pricing) |
-| `monitor-page` | Track changes on a web page over time |
-| `compare-prices` | Compare prices across multiple retailers |
-| `find-alternatives` | Find alternative products/services |
-| `fill-form` | Automate form filling and submission |
-| `save-page` | Save pages for offline reading |
-| `read-later` | Queue pages to read later |
-| `manage-bookmarks` | CRUD on bookmarks |
-| `organize-tabs` | Organize tabs into groups |
-| `screenshot-walkthrough` | Document workflows with screenshots |
-| `summarize-page` | Extract and summarize page content |
+| Skill                    | Description                                         |
+| :----------------------- | :-------------------------------------------------- |
+| `deep-research`          | Multi-source research with HTML report + PDF        |
+| `extract-data`           | Extract structured data (tables, products, pricing) |
+| `monitor-page`           | Track changes on a web page over time               |
+| `compare-prices`         | Compare prices across multiple retailers            |
+| `find-alternatives`      | Find alternative products/services                  |
+| `fill-form`              | Automate form filling and submission                |
+| `save-page`              | Save pages for offline reading                      |
+| `read-later`             | Queue pages to read later                           |
+| `manage-bookmarks`       | CRUD on bookmarks                                   |
+| `organize-tabs`          | Organize tabs into groups                           |
+| `screenshot-walkthrough` | Document workflows with screenshots                 |
+| `summarize-page`         | Extract and summarize page content                  |
 
 ---
 
@@ -336,6 +353,7 @@ BrowserOS has a built-in `deep-research` skill:
 > "Research the current state of AI coding assistants. Compare at least 5 sources including GitHub, papers with code, and industry blogs. Create both an HTML report and a PDF."
 
 Hermes will:
+
 1. Plan 5 search queries
 2. Open parallel hidden tabs (10 max)
 3. Navigate, extract, save each source
@@ -365,6 +383,7 @@ Set up monitoring with cron:
 5. Save new state
 
 Example cron job:
+
 ```
 # Check Hacker News top post every hour
 0 * * * * hermes exec "check HN and save top story"
@@ -387,6 +406,7 @@ BrowserOS can connect to 40+ services:
 ### 1. Always Take a Snapshot First
 
 Before any automation, always:
+
 ```
 # Get interactive elements
 snapshot = take_snapshot()
@@ -435,12 +455,14 @@ For nested structures (product cards, etc.):
 
 ```javascript
 // extract.js
-const items = document.querySelectorAll('.product-card');
-return JSON.stringify(Array.from(items).map(item => ({
-    name: item.querySelector('.title').innerText,
-    price: item.querySelector('.price').innerText,
-    url: item.querySelector('a').href
-})));
+const items = document.querySelectorAll(".product-card");
+return JSON.stringify(
+  Array.from(items).map((item) => ({
+    name: item.querySelector(".title").innerText,
+    price: item.querySelector(".price").innerText,
+    url: item.querySelector("a").href,
+  })),
+);
 ```
 
 ### 6. Clean Up After Automation
@@ -479,7 +501,8 @@ NVIDIA RTX 5090,$999,https://newegg.com/product/...
 **Problem:** `Failed to connect to MCP server 'browseros'`
 
 **Fix:**
-1. Verify BrowserOS is running: `curl http://127.0.0.1:9200/health`
+
+1. Verify BrowserOS is running: `curl http://127.0.0.1:9201/health`
 2. If not, start BrowserOS: `~/Downloads/BrowserOS`
 3. Restart Hermes
 
@@ -488,6 +511,7 @@ NVIDIA RTX 5090,$999,https://newegg.com/product/...
 **Problem:** Tools listed but not available
 
 **Fix:**
+
 1. Restart Hermes: `hermes` (new session)
 2. Check config: `cat ~/.hermes/config.yaml | grep -A5 mcp_servers`
 
@@ -496,12 +520,14 @@ NVIDIA RTX 5090,$999,https://newegg.com/product/...
 **Problem:** `navigate_page` times out
 
 **Fix:**
+
 - Increase timeout in config:
+
   ```yaml
   mcp_servers:
     browseros:
-      url: "http://127.0.0.1:9200/mcp"
-      timeout: 180  # increased from 120
+      url: "http://127.0.0.1:9201/mcp"
+      timeout: 180 # increased from 120
   ```
 
 ### Screenshot Not Supported on Hidden Tab
@@ -509,7 +535,9 @@ NVIDIA RTX 5090,$999,https://newegg.com/product/...
 **Problem:** `take_screenshot` fails on hidden tab
 
 **Fix:**
+
 - Use `show_page` first to make the tab visible:
+
   ```
   await show_page(page_id=page_id)
   ```
@@ -519,6 +547,7 @@ NVIDIA RTX 5090,$999,https://newegg.com/product/...
 **Problem:** `click` or `fill` fails — element not in snapshot
 
 **Fix:**
+
 1. Wait for page to settle: `evaluate_script` with a small delay
 2. Re-take snapshot: `take_snapshot`
 3. Use `search_dom` to find element by text/CSS
