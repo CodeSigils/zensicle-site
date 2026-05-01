@@ -163,7 +163,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Context Management
 
 | Hook                          | Description                                           |
-| ----------------------------- | ----------------------------------------------------- |
+| :--- | :---------- |
 | `preemptive-compaction`       | Preemptive context compaction to prevent token limits |
 | `compaction-context-injector` | Manages context during compaction                     |
 | `ralph-loop`                  | Ralph agent loop management                           |
@@ -171,7 +171,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Code Quality
 
 | Hook                       | Description                            |
-| -------------------------- | -------------------------------------- |
+| :--- | :---------- |
 | `comment-checker`          | Validates code comments                |
 | `thinking-block-validator` | Validates thinking blocks in responses |
 | `empty-message-sanitizer`  | Cleans empty messages                  |
@@ -179,7 +179,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Output Management
 
 | Hook                    | Description                       |
-| ----------------------- | --------------------------------- |
+| :--- | :---------- |
 | `tool-output-truncator` | Manages tool output sizes         |
 | `grep-output-truncator` | Truncates large grep outputs      |
 | `keyword-detector`      | Detects keywords in conversations |
@@ -187,7 +187,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Workflow Automation
 
 | Hook                        | Description                       |
-| --------------------------- | --------------------------------- |
+| :--- | :---------- |
 | `directory-agents-injector` | Injects directory-specific agents |
 | `directory-readme-injector` | Adds README context automatically |
 | `rules-injector`            | Injects custom rules              |
@@ -196,7 +196,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Notifications & Updates
 
 | Hook                      | Description                      |
-| ------------------------- | -------------------------------- |
+| :--- | :---------- |
 | `startup-toast`           | Shows startup notifications      |
 | `auto-update-checker`     | Checks for updates automatically |
 | `background-notification` | Background notifications         |
@@ -204,7 +204,7 @@ Oh My OpenCode includes 20+ built-in hooks:
 #### Environment Handling
 
 | Hook                                      | Description                          |
-| ----------------------------------------- | ------------------------------------ |
+| :--- | :---------- |
 | `interactive-bash-session`                | Manages interactive sessions         |
 | `non-interactive-env`                     | Handles non-interactive environments |
 | `anthropic-context-window-limit-recovery` | Handles Anthropic limits             |
@@ -242,7 +242,7 @@ Perfect for finding similar implementations or examples.
 #### Other Popular MCPs
 
 | MCP Server     | Purpose                | Use Case                               |
-| -------------- | ---------------------- | -------------------------------------- |
+| :--------- | :------ | :------- |
 | `filesystem`   | File system operations | Read/write files, directory management |
 | `github`       | GitHub integration     | Issues, PRs, repo management           |
 | `playwright`   | Browser automation     | Testing, web scraping                  |
@@ -335,7 +335,7 @@ Automatic time tracking for your OpenCode sessions.
 The MCP ecosystem offers 1,200+ servers including:
 
 | Category          | Popular Servers              |
-| ----------------- | ---------------------------- |
+| :------- | :-------------- |
 | **Browser**       | Playwright, Puppeteer        |
 | **Database**      | PostgreSQL, Supabase, SQLite |
 | **Search**        | Brave Search, Google Search  |
@@ -441,7 +441,7 @@ Context management hooks prevent token blow-ups in large projects.
 ## Comparison with OpenCode
 
 | Feature                | **OpenCode**           | **Oh My OpenCode**                   |
-| ---------------------- | ---------------------- | ------------------------------------ |
+| :------ | :----------- | :----------------- |
 | **Base Functionality** | Core AI coding agent   | Orchestration layer on top           |
 | **Agents**             | Single default agent   | Sisyphus, Librarian, Explore, Oracle |
 | **Hooks**              | Basic plugin hooks     | 20+ built-in workflow hooks          |

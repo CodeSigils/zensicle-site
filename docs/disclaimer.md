@@ -61,6 +61,6 @@ Your experience may differ. Always verify against your own research.
 
 For concerns about specific content, please exercise your own judgment after verification.
 
-***
+---
 
 _This disclaimer is part of the Code Sigils documentation._

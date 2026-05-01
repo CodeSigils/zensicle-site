@@ -15,7 +15,8 @@ media_library:
 site_url: https://codesigils.github.io/
 
 collections:
-  - name: "pages"
+
+- name: "pages"
     label: "Pages"
     label_singular: "Page"
     folder: "docs"
@@ -24,49 +25,49 @@ collections:
     extension: md
     format: frontmatter
     fields:
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - {
+  - { label: "Title", name: "title", widget: "string", required: false }
+  - {
           label: "Description",
           name: "description",
           widget: "text",
           required: false,
           hint: "Short summary for SEO and previews",
         }
-      - {
+  - {
           label: "Keywords",
           name: "keywords",
           widget: "list",
           required: false,
           hint: "Comma-separated keywords for SEO",
         }
-      - {
+  - {
           label: "Icon",
           name: "icon",
           widget: "string",
           required: false,
           hint: "e.g. lucide/rocket",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "home"
+- name: "home"
     label: "Homepage"
     files:
-      - file: "docs/index.md"
+  - file: "docs/index.md"
         label: "Home"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string", required: false }
-          - {
+    - { label: "Title", name: "title", widget: "string", required: false }
+    - {
               label: "Description",
               name: "description",
               widget: "text",
               required: false,
               hint: "Short summary for SEO",
             }
-          - { label: "Icon", name: "icon", widget: "string", required: false }
-          - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Icon", name: "icon", widget: "string", required: false }
+    - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "jsts"
+- name: "jsts"
     label: "JS-TS Section"
     folder: "docs/JS-TS"
     create: true
@@ -74,25 +75,25 @@ collections:
     extension: md
     format: frontmatter
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - {
+  - { label: "Title", name: "title", widget: "string" }
+  - {
           label: "Description",
           name: "description",
           widget: "text",
           required: false,
           hint: "Short summary for SEO",
         }
-      - {
+  - {
           label: "Keywords",
           name: "keywords",
           widget: "list",
           required: false,
           hint: "Comma-separated keywords for SEO",
         }
-      - { label: "Icon", name: "icon", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - { label: "Icon", name: "icon", widget: "string", required: false }
+  - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "ai"
+- name: "ai"
     label: "AI Section"
     folder: "docs/AI"
     create: true
@@ -100,20 +101,20 @@ collections:
     extension: md
     format: frontmatter
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - {
+  - { label: "Title", name: "title", widget: "string" }
+  - {
           label: "Description",
           name: "description",
           widget: "text",
           required: false,
           hint: "Short summary for SEO",
         }
-      - {
+  - {
           label: "Keywords",
           name: "keywords",
           widget: "list",
           required: false,
           hint: "Comma-separated keywords for SEO",
         }
-      - { label: "Icon", name: "icon", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - { label: "Icon", name: "icon", widget: "string", required: false }
+  - { label: "Body", name: "body", widget: "markdown" }

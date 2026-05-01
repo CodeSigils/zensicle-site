@@ -17,7 +17,7 @@ A comprehensive guide to connecting Google NotebookLM with OpenCode for AI-power
 
 ## Table of Contents
 
-1. [Quick Start](#quick-start) (5 minutes)
+1. [Quick Start](#quick-start-5-minutes) (5 minutes)
 2. [Prerequisites](#prerequisites)
 3. [Introduction](#introduction)
 4. [Installation](#installation)
@@ -89,14 +89,12 @@ On first use, Chrome opens automatically:
 Before starting, ensure you have:
 
 | Requirement                   | Version | Check Command              |
-| ----------------------------- | ------- | -------------------------- |
+| :---------- | :------ | :------------ |
 | **Node.js**                   | 18+     | `node --version`           |
 | **npm**                       | 9+      | `npm --version`            |
 | **Google Chrome**             | Latest  | `chrome --version`         |
 | **Google Account**            | -       | -                          |
 | **Gemini API Key** (optional) | -       | Get at aistudio.google.com |
-
-### Prerequisites
 
 !!! tip "Before You Start"
 
@@ -107,7 +105,7 @@ Before starting, ensure you have:
     
     **Node.js not working?** See [OpenCode Prerequisites](../opencode-guide.md#prerequisites) for setup.
 
-#### Quick Node.js Verification
+### Quick Node.js Verification
 
 ??? tip "Verify Node.js"
 
@@ -179,7 +177,7 @@ Google NotebookLM is an AI-powered research assistant that:
 ### Why Integrate with OpenCode?
 
 | Without Integration    | With Integration                   |
-| ---------------------- | ---------------------------------- |
+| :------------------ | :--------------- |
 | Manual document upload | Auto-add sources from terminal     |
 | Copy-paste research    | Query notebooks directly           |
 | Single-document focus  | Cross-reference multiple notebooks |
@@ -204,7 +202,7 @@ Google NotebookLM is an AI-powered research assistant that:
 ### Which Integration Method Should You Choose?
 
 | Method              | Best For               | Difficulty | Security |
-| ------------------- | ---------------------- | ---------- | -------- |
+| :----- | :------- | :--------- | :------- |
 | **MCP Server**      | Most users, enterprise | Easy       | ★★★★★    |
 | **OpenCode Plugin** | Plugin developers      | Medium     | ★★★★☆    |
 | **Local Build**     | Customization needs    | Hard       | ★★★★★    |
@@ -378,7 +376,7 @@ When auth expires, the plugin attempts 4-layer recovery:
 ### Core Tools
 
 | Tool                    | Description                               |
-| ----------------------- | ----------------------------------------- |
+| :--- | :---------- |
 | `notebook_query`        | Query your notebook with natural language |
 | `notebook_list`         | List all your notebooks                   |
 | `notebook_create`       | Create a new notebook                     |
@@ -895,7 +893,7 @@ A: Add your Gemini API key for higher limits, or wait and retry.
 
 4. **Then add MCP:**
    - Edit `~/.config/opencode/opencode.json`
-   - Add the MCP config from [Quick Start](#quick-start)
+   - Add the MCP config from [Quick Start](#quick-start-5-minutes)
 
 ### If You're New to NotebookLM
 
@@ -945,7 +943,7 @@ Then come back here to connect it with OpenCode!
 ## Changelog
 
 | Version | Date       | Changes                                    |
-| ------- | ---------- | ------------------------------------------ |
+| :------ | :--- | :------ |
 | 1.0     | April 2026 | Initial tutorial                           |
 | 1.1     | April 2026 | Added Quick Start, FAQ, Newcomer Guide     |
 | 1.2     | April 2026 | Added workflow examples, improved patterns |

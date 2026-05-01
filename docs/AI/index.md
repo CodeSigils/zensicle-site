@@ -54,7 +54,7 @@ Modern AI coding assistants offer:
 ## Tooling Ecosystem
 
 | Category | Tools |
-| --- | --- |
+| :------- | :---- |
 | **Terminal Agents** | OpenCode, Claude CLI, Cursor |
 | **Orchestration** | Oh My OpenAgent, Sisyphus |
 | **Local Models** | Dolphin, Ollama, LM Studio |
@@ -67,6 +67,6 @@ Modern AI coding assistants offer:
 - [Dolphin LLM](./dolphin-llm-guide.md) - Running models locally
 - [Free AI Models](./free-ai-models.md) - Cost-free alternatives
 
-***
+---
 
 _This section is part of the Code Sigils documentation._

@@ -34,7 +34,7 @@ A comparison of two open-source AI agent platforms.
 ## Overview
 
 | Feature               | **Hermes AI**                                                  | **OpenCode**                                       |
-| --------------------- | -------------------------------------------------------------- | -------------------------------------------------- |
+| :------ | :------------ | :----------- |
 | **Focus**             | General autonomous agent for automation, memory, and workflows | Coding-focused AI assistant                        |
 | **Publisher**         | Nous Research (open source)                                    | Anomaly (open source)                              |
 | **GitHub Stars**      | ~27K                                                           | ~140K                                              |

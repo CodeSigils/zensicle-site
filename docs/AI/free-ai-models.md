@@ -21,7 +21,7 @@ keywords:
 ## Table of Contents
 
 1. [Hugging Face Inference Providers](#hugging-face-inference-providers)
-2. [OpenCode Free Models](#opencode-free-models)
+2. [OpenCode Free Models](#open-code-free-models)
 3. [Other Free Tiers](#other-free-tiers)
 4. [Recommendations by Use Case](#recommendations-by-use-case)
 5. [Model Comparison Tables](#model-comparison-tables)
@@ -54,16 +54,19 @@ OpenCode natively supports Hugging Face Inference Providers - giving you access 
     opencode auth login
     
     # 3. Select Hugging Face when prompted
-#    Enter your token: hf_...
+
+# Enter your token: hf_
 
 # 4. Select a model
+
 /models
+
 ```
 
 ### Best Coding Models
 
 || Model                 | Best For          | Provider    | Context | Notes |
-|| --------------------- | ----------------- | ----------- | ------- | ----- |
+| :--- | :---- | :------- | :------- | :------ | :---- |
 || **Qwen2.5-Coder-32B** | Code reasoning    | Featherless | 131K    | Good for complex code tasks |
 
 ### Other Notable Models
@@ -123,7 +126,7 @@ opencode
 ### Free Tier Comparison
 
 | Provider             | Free Credits     | Best Models          | Sign Up             |
-| -------------------- | ---------------- | -------------------- | ------------------- |
+| :------- | :----------- | :---------- | :------ |
 | **Google AI Studio** | 15 RPM, 250K TPM | Gemini 2.5 Pro/Flash | aistudio.google.com |
 | **GitHub Models**    | 50-150 req/day   | o3-mini, GPT-4.1          | github.com/models   |
 | **NVIDIA NIM**       | 1,000 credits    | DeepSeek R1, Llama   | build.nvidia.com    |
@@ -184,7 +187,7 @@ opencode
 ### Coding Models Comparison
 
 || Model             | Provider    | Context | Speed   | Notes              | Best For          |
-|| ----------------- | ----------- | ------- | ------- | ------------------ | ----------------- |
+| :--- | :---- | :------- | :------ | :---- | :---- | :------- |
 || Qwen2.5-Coder-32B | Featherless | 131K    | Medium  | Good code reasoning| Code reasoning    |
 || DeepSeek-R1       | Hyperbolic  | 131K    | Medium  | Chain-of-thought   | Complex reasoning |
 || GPT-4.1           | GitHub      | 32K     | Fast    | Free tier          | General coding    |
@@ -192,7 +195,7 @@ opencode
 ### Free Models Comparison
 
 || Model            | Source       | Notes                    |
-|| ---------------- | ------------ | ------------------------ |
+| :--- | :---- | :----- | :---- |
 || Big Pickle       | OpenCode     | Works out of box         |
 || GLM 4.7 Flash    | Hugging Face | Slower                   |
 || Gemini 2.5 Flash | Google       | Generous free tier       |

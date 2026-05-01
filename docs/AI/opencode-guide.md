@@ -34,7 +34,7 @@ The open source AI coding agent for terminal, desktop, and IDE.
 13. [Troubleshooting](#troubleshooting)
 14. [Further Reading](#further-reading)
 
-***
+---
 
 ## What is OpenCode?
 
@@ -47,7 +47,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 ### Key Statistics
 
 | Metric | Value |
-| --- | --- |
+| :----- | :---- |
 | **GitHub Stars** | 140K+ |
 | **Contributors** | 850+ |
 | **Monthly Developers** | 6.5M+ |
@@ -61,7 +61,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 - **Privacy First** — No code or context stored on servers
 - **Local-First** — Run locally with optional cloud services
 
-***
+---
 
 ## Official Links
 
@@ -73,7 +73,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 - **Discord**: https://opencode.ai/discord
 - **Desktop App**: https://opencode.ai/download
 
-***
+---
 
 ## Installation
 
@@ -90,7 +90,7 @@ OpenCode is an **open source AI coding agent** that helps developers write, debu
 !!! warning "Common Mistakes to Avoid"
 
 | ❌ Don't Do This | ✅ Do This Instead |
-| --- | --- |
+| :--------------- | :----------------- |
 | `sudo apt install nodejs` (Ubuntu - installs ancient Node) | Use mise, fnm, n, or nvm |
 | Rely on `source ~/.nvm/nvm.sh` manually | Use mise or fnm (auto-loads) |
 | Assume Node persists across terminals | Test in a NEW terminal |
@@ -241,7 +241,7 @@ Download the beta for macOS, Windows, and Linux:
 
 - https://opencode.ai/download
 
-***
+---
 
 ## Core Features
 
@@ -335,7 +335,7 @@ Auto-reload and respond to file changes:
 - Build on save
 - Test on change
 
-***
+---
 
 ## Model Support
 
@@ -344,7 +344,7 @@ Auto-reload and respond to file changes:
 OpenCode connects to virtually any LLM via Models.dev:
 
 | Category | Providers |
-| --- | --- |
+| :------- | :-------- |
 | **Cloud APIs** | OpenAI, Anthropic, Google, Mistral, Cohere |
 | **Local Models** | Ollama, LM Studio, LocalAI |
 | **Subscriptions** | GitHub Copilot, ChatGPT Plus/Pro |
@@ -410,7 +410,7 @@ For organization billing:
 ### Recommended Models
 
 | Model | Best For |
-| --- | --- |
+| :---- | :------- |
 | GPT-5.2 | General coding, speed |
 | GPT-5.1 Codex | Code-heavy tasks |
 | Claude Opus 4.5 | Complex reasoning |
@@ -433,7 +433,7 @@ A curated list of tested and verified models:
 - Big Pickle Free
 - MiniMax M2.1 Free
 
-***
+---
 
 ## Plugins & Extensions
 
@@ -463,7 +463,7 @@ OpenCode's plugin system allows hooking into various events and customizing beha
 OpenCode supports 20+ events for plugins:
 
 | Category | Events |
-| --- | --- |
+| :------- | :----- |
 | **Command** | `command.executed` |
 | **File** | `file.edited`, `file.watcher.updated` |
 | **Session** | `session.created`, `session.compacted`, `session.deleted`, `session.diff`, `session.error`, `session.idle` |
@@ -479,7 +479,7 @@ OpenCode supports 20+ events for plugins:
 ### Built-in Tools
 
 | Tool | Description |
-| --- | --- |
+| :--- | :---------- |
 | `bash` | Execute shell commands |
 | `read` | Read files with glob support |
 | `edit` | Apply string replacements |
@@ -513,7 +513,7 @@ export const MyTool = tool({
 });
 ```
 
-***
+---
 
 ## Most Used Plugins
 
@@ -598,14 +598,14 @@ Complete Claude Code compatibility for OpenCode.
 ### 7. Session & Analytics Plugins
 
 | Plugin | Purpose |
-| --- | --- |
+| :----- | :------ |
 | `opencode-helicone-session` | Session logging and analytics |
 | `opencode-wakatime` | Automatic time tracking |
 
 ### 8. MCP Servers (1,200+ Available)
 
 | Category | Popular Servers |
-| --- | --- |
+| :------- | :-------------- |
 | **Browser** | Playwright, Puppeteer |
 | **Database** | PostgreSQL, Supabase, SQLite |
 | **Search** | Brave Search, Google Search |
@@ -620,19 +620,20 @@ Complete Claude Code compatibility for OpenCode.
 - https://github.com/wong2/awesome-mcp-servers
 - https://mcp-awesome.com
 
-***
+---
 
 ## Configuration
 
 ### Configuration Files
 
 | Location | Priority | Purpose |
-| --- | --- | --- |
+| :------- | :------- | :------ |
 | `./opencode.json` | 1st | Project directory |
 | `~/.config/opencode/opencode.json` | 2nd | XDG config directory |
 | `~/.opencode.json` | 3rd | Home directory |
 
 **Note**: Config file locations (verified 2026):
+
 - `$HOME/.opencode.json`
 - `$XDG_CONFIG_HOME/opencode/.opencode.json`
 - `./.opencode.json` (local directory)
@@ -696,7 +697,7 @@ Then:
 3. Copy API key
 4. Paste into terminal
 
-***
+---
 
 ## Interface Options
 
@@ -739,7 +740,7 @@ Access via browser at:
 
 Connect to ACP-compatible editors for deep IDE integration.
 
-***
+---
 
 ## Enterprise Features
 
@@ -753,7 +754,7 @@ Connect to ACP-compatible editors for deep IDE integration.
 ### Enterprise Deployment
 
 | Feature | Description |
-| --- | --- |
+| :------ | :---------- |
 | **Self-Hosted** | Run entirely on your infrastructure |
 | **Custom Providers** | Use your own LLM infrastructure |
 | **Privacy Controls** | Data never leaves your environment |
@@ -767,7 +768,7 @@ Connect to ACP-compatible editors for deep IDE integration.
 - Monthly spending limits
 - Shared API keys
 
-***
+---
 
 ## Use Cases
 
@@ -942,14 +943,14 @@ opencode --agent
 
 Best for: Project setup, large refactors, debugging, testing, code migration.
 
-***
+---
 
 ## Comparison
 
 ### OpenCode vs Claude Code
 
 | Feature | **OpenCode** | **Claude Code** |
-| --- | --- | --- |
+| :------ | :----------- | :-------------- |
 | **GitHub Stars** | 140K+ | 20K+ |
 | **License** | MIT | Proprietary |
 | **Provider Support** | 75+ providers | Anthropic only |
@@ -960,7 +961,7 @@ Best for: Project setup, large refactors, debugging, testing, code migration.
 ### OpenCode vs Cursor
 
 | Feature | **OpenCode** | **Cursor** |
-| --- | --- | --- |
+| :------ | :----------- | :--------- |
 | **Focus** | Terminal-native | IDE-centric |
 | **Model Support** | Any provider | Custom models |
 | **Open Source** | Yes | Partial |
@@ -974,7 +975,7 @@ Best for: Project setup, large refactors, debugging, testing, code migration.
 - You value open-source software
 - You want to avoid vendor lock-in
 
-***
+---
 
 ## Troubleshooting
 
@@ -1057,7 +1058,7 @@ rm -rf ~/.cache/opencode
 ~/.config/opencode/logs/
 ```
 
-***
+---
 
 ## Further Reading
 
@@ -1097,6 +1098,6 @@ rm -rf ~/.cache/opencode
 - [AgentWiki OpenCode](https://agentwiki.org/opencode)
 - [Ry Walker Research](https://rywalker.com/research/opencode)
 
-***
+---
 
 _Guide last updated: April 2026_

@@ -19,7 +19,7 @@ The Dolphin family of LLMs — open source, uncensored, and steerable models fro
 
 ## What is Dolphin?
 
-Dolphin is a family of open-source LLMs developed by [Eric Hartford](https://huggingface.co/dphn), [Cognitive Computations](https://huggingface.co/cognitivecomputations), and collaborators. 
+Dolphin is a family of open-source LLMs developed by [Eric Hartford](https://huggingface.co/dphn), [Cognitive Computations](https://huggingface.co/cognitivecomputations), and collaborators.
 
 ### Key Characteristics
 
@@ -91,7 +91,7 @@ Dolphin models are available in various GGUF formats for different use cases:
 ## Video Overview
 
 <div class="youtube-video-wrapper">
-  <iframe src="https://www.youtube.com/embed/xSqnWcLFd6Y" 
+  <iframe src="https://www.youtube.com/embed/xSqnWcLFd6Y"
           allowfullscreen>
   </iframe>
 </div>

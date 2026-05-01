@@ -125,7 +125,7 @@ Create an [`oxc.config.json`](https://oxc.rs/docs/guide/usage/linter-config.html
 ### Configuration Options
 
 | Option        | Type                     | Default    | Description                            |
-| ------------- | ------------------------ | ---------- | -------------------------------------- |
+| :----- | :--- | :------ | :---------- |
 | `enabled`     | boolean                  | `true`     | Enable/disable formatter               |
 | `indentStyle` | `"tab" \| "space"`       | `"tab"`    | Indentation style                      |
 | `indentWidth` | number                   | `2`        | Number of spaces per indentation level |
@@ -280,5 +280,3 @@ Speedup: 40x faster
 - [Configuration Documentation](https://oxc.rs/docs/guide/usage/linter-config.html)
 
 ---
-
-[^1]: Performance metrics are approximate and depend on hardware and codebase size.

@@ -44,7 +44,7 @@ early and improve code maintainability:
 The JavaScript/TypeScript ecosystem offers a rich set of tools:
 
 | Category | Tools |
-| --- | --- |
+| :------- | :---- |
 | **Bundlers** | Vite, Webpack, Rollup, esbuild, Parcel |
 | **Package Managers** | npm, yarn, pnpm, bun |
 | **Linters** | ESLint, oxlint |
@@ -57,6 +57,6 @@ The JavaScript/TypeScript ecosystem offers a rich set of tools:
 - [OXC Formatter Guide](./oxc-formatting.md) - Learn about the fast Rust-based formatter
 - [TypeScript Official Website](https://www.typescriptlang.org/) - Documentation, playground, and resources
 
-***
+---
 
 _This section is part of the Code Sigils documentation._
