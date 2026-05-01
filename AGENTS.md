@@ -202,6 +202,12 @@ When documenting commands for any technology:
    - If in doubt, search the official docs again
    - Don't rely on a single source for critical commands
 
+5. **Article infoemation validation**:
+   - **Check link validity** - Verify each URL returns a valid HTTP response
+   - **Investigate content accuracy** - Ensure the linked content matches the article claims
+   - **Check for broken links** - Identify 404 errors or domain changes
+   - **Validate references** - Confirm citations are from reputable sources
+
 ### Example Verification Workflow
 
 ```bash
