@@ -27,11 +27,12 @@
   "MD055": true,
   "MD060": false,
   "exclude": [
+    "node_modules",
+    "^node_modules/",
+    "admin/",
     "^docs/admin/",
+    "assets/",
     "^docs/assets/",
-    "^docs/\\.cache/",
-    "^docs/\\.overrides/",
-    "^docs/\\.没收/",
     "\\.svg$",
     "\\.(png|jpg|jpeg|gif|webp|ico)$",
     "\\.html$"
