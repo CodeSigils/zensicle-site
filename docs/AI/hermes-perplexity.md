@@ -12,7 +12,7 @@ keywords:
   - open source
 ---
 
-<p><img src="/assets/images/hermes-perplexity.jpg" alt="Perplexity AI via Composio" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
+![Perplexity AI via Composio](/assets/images/hermes-perplexity.jpg){ width=900 }
 
 Perplexity via Composio is straightforward using either the CLI or MCP method. Both handle authentication securely and enable tasks like AI search, summarization, and multi-turn queries.
 

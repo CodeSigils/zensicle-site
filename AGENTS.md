@@ -220,53 +220,23 @@ curl -fsSL https://example.com/install | sh
 # 3. Confirming the command works on your test environment
 ```
 
-### Responsive Videos
-
-Use this pattern to embed YouTube videos responsively (maintains 16:9 aspect ratio):
-
-```markdown
-<div>
-  <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-            frameborder="0"
-            allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;">
-    </iframe>
-  </div>
-</div>
-```
-
-**Replace `VIDEO_ID`** with the actual YouTube video ID (e.g., `xSqnWcLFd6Y`).
-
-This ensures videos scale properly on all screen sizes while maintaining aspect ratio.
-
 ### Responsive Images
 
-Always use inline HTML for images in articles (Zensical/Decap CMS ignores markdown image attributes like `{ width=900 }`):
+Zensical supports standard markdown image syntax with the `attr_list` extension. Use the `{ width= }` attribute for sizing:
 
 ```markdown
-<p><img src="/assets/images/image.png" alt="Description" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
+![Alt text](/assets/images/image.webp){ width=900 }
 ```
 
-**Key points:**
+CSS classes used by Zensical for images:
 
-- `max-width:100%` — scales down on mobile
-- `width:900px` — constrained display width (adjust as needed)
-- `height:auto` — preserves aspect ratio
-- `display:block;margin:1em 0;` — clean vertical spacing
-- `loading=lazy` — add for below-the-fold images; omit for hero/LCP images
+| Selector | Purpose |
+| :------- | :------ |
+| `.md-typeset img` | `max-width: 100%; height: auto;` |
+| `.md-typeset figure` | `display: flow-root; margin: 1em auto; max-width: 100%;` |
+| `.md-typeset figure img` | `display: block; margin: 0 auto;` |
 
-**First image (hero) - no lazy loading:**
-
-```markdown
-<p><img src="/assets/images/hero.png" alt="Hero" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
-```
-
-**Below-the-fold images:**
-
-```markdown
-<p><img src="/assets/images/screenshot.png" alt="Screenshot" loading="lazy" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
-```
+Image sources live in `docs/assets/images/` and deploy to `/assets/images/`. WebP preferred for screenshots (smaller files). PNG for logos/icons. JPEG for photos.
 
 ### Responsive Videos
 
@@ -286,8 +256,9 @@ Always use the YouTube wrapper pattern to maintain 16:9 aspect ratio on all scre
 
 Inline HTML is **allowed and encouraged** for:
 
-- Responsive images (`<p><img ... style="..." /></p>`)
 - Embedded videos (YouTube iframes)
 - Custom styling not possible with markdown
+
+Images should use standard markdown with `{ width= }` — do **not** use inline HTML for images.
 
 MD033 (no inline HTML) is **disabled** in `.markdownlint.json` for this repo.

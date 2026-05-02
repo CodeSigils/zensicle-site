@@ -254,12 +254,15 @@ features = [
   #"toc.integrate",
 ]
 
-# ----------------------------------------------------------------------------
-# You can configure your own logo to be shown in the header using the "logo"
-# option in the "theme" subsection. The logo must be a relative path to a file
-# in your "docs_dir", e.g., to use `docs/assets/logo.png` you would set:
-# ----------------------------------------------------------------------------
-#logo = "assets/logo.png"
+# ============================================================================
+#
+# Markdown extensions enable additional Markdown syntax and features.
+# Read more: https://zensical.org/docs/authoring/markdown/
+#
+# ============================================================================
+[project.markdown_extensions]
+attr_list = true
+md_in_html = true
 
 # ----------------------------------------------------------------------------
 # If you don't have a dedicated project logo, you can use a built-in icon from
