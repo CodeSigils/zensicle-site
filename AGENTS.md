@@ -242,23 +242,45 @@ This ensures videos scale properly on all screen sizes while maintaining aspect 
 
 ### Responsive Images
 
-Use this pattern for responsive images:
+Always use inline HTML for images in articles (Zensical/Decap CMS ignores markdown image attributes like `{ width=900 }`):
 
 ```markdown
-![Alt text](/assets/images/image.png){ loading=lazy }
+<p><img src="/assets/images/image.png" alt="Description" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
 ```
 
 **Key points:**
 
-- Use `loading=lazy` for below-the-fold images
-- Do NOT lazy-load the first image (hero/LCP image)
-- Always specify width/height when possible to prevent layout shift
+- `max-width:100%` — scales down on mobile
+- `width:900px` — constrained display width (adjust as needed)
+- `height:auto` — preserves aspect ratio
+- `display:block;margin:1em 0;` — clean vertical spacing
+- `loading=lazy` — add for below-the-fold images; omit for hero/LCP images
 
 **First image (hero) - no lazy loading:**
 
 ```markdown
-![Alt text](/assets/images/hero.png){ width=900 }
+<p><img src="/assets/images/hero.png" alt="Hero" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
 ```
+
+**Below-the-fold images:**
+
+```markdown
+<p><img src="/assets/images/screenshot.png" alt="Screenshot" loading="lazy" style="max-width:100%;width:900px;height:auto;display:block;margin:1em 0;" /></p>
+```
+
+### Responsive Videos
+
+Always use the YouTube wrapper pattern to maintain 16:9 aspect ratio on all screens:
+
+```markdown
+<div class="youtube-video-wrapper">
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+          allowfullscreen>
+  </iframe>
+</div>
+```
+
+**Replace `VIDEO_ID`** with the actual YouTube video ID (e.g., `xSqnWcLFd6Y`).
 
 ### Inline HTML
 
